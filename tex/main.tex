@@ -1,33 +1,31 @@
-\documentclass[12pt,a4paper]{article}
-
-% ---------- Packages ----------
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{setspace} 
-\onehalfspacing
-\usepackage{titlesec}
-\usepackage{hyperref} 
-\usepackage{cite}
-\usepackage{amsmath, amssymb}
-\usepackage{graphicx} 
-\usepackage{caption} 
-
-
-\title{The New Age of Big Data In Astronomy: A Review of on the SKA \& LSST}
-\author{Mathew Icho \\ \small Department of Astronomy, The University of Urbana-Champaign}
-\date{\today}
+\documentclass[manuscript,linenumbers,longauthor]{aastex631}
 
 \begin{document}
 
-\maketitle
+\title{The New Age of Big Data In Astronomy: A Review of on the SKA \& LSST}
+\author{Mathew Icho}
+\affiliation{The University of Illinois at Urbana-Champaign}
 
 \begin{abstract}
-
+Write my abstract here
 \end{abstract}
 
+\tableofcontents
+
 \section{Introduction}
+%Start with kind of a summarized overview with the paper
+%Then go to history of data being handled in Astronomy
+%Then go talk about Moore's law
+%Then talk about main idea of this paper, say how its gonna be structured
+The concept of data has long been a central concern throughout the history of astronomy. Data enables scientists to discern the underlying principles governing natural phenomena, exert control over events, and make reliable predictions. It has played a critical role in other time-sensitive domains such as medicine and engineering, where accurate data is essential for decision-making and design. Although the nature of data varies fundamentally across different fields, from medicine to astronomy, one trend has remained consistent: the continual evolution of data science. As explained in The Fourth Paradigm \citep{heyFourthParadigmDataIntensive2009}, this evolution can be characterized through four successive paradigms. In the following sections, I describe the progression of data acquisition across these paradigms and illustrate each using examples from astronomy. I will then explain how SKA and LSST fit into this trajectory and exemplify the emerging era of data-intensive discovery.
+\subsection{The Paradigms of Data Science}
+The first and most primitive paradigm, as described by Hey, is empirical evidence. Empirical evidence refers to data collected through traditional means, such as direct observation or experimentation of natural phenomena using sensory perception or basic instruments. The primary purpose of empirical evidence is to identify patterns that allow scientists to develop a fundamental understanding of the natural world. Throughout much of human history, empirical evidence represented the most prominent method for extracting knowledge from nature. An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe primarily collected and cataloged data on the position of astronomical bodies using naked-eye observations. However, this method of data collection is associated with several limitations. Empirical evidence can be compromised by human error, the precision of the instruments employed, and, most importantly, the relatively slow pace of data acquisition compared to subsequent paradigms.
+\\The second paradigm is analytical evidence. Analytical evidence represents the second most prominent mode of scientific inquiry in terms of longevity. The primary purpose of analytical evidence is to construct mathematical formulas and theoretical frameworks based on empirical data. Unlike the first paradigm, which merely demonstrates that phenomena occur, the second paradigm seeks to explain why they occur. An example of the second paradigm in astronomy is the work of Johannes Kepler, a student of Tycho Brahe, who used Brahe’s empirical observations to derive the laws of planetary motion \citep{heyFourthParadigmDataIntensive2009}. By transforming raw observational data into mathematical laws, Kepler exemplified how analytical evidence advances scientific understanding beyond description to explanation.%\\Astronomy has always been a data-driven field, but throughout history, much of the process was an afterthought for astronomers. This is because tradionally, astronomers were restricted by a multitude of parameters, such as telescope size, detector sensitivity, and available observing time for an event. Conversely, astronomers today face different problems
+\\The third paradigm is simulation evidence, a comparatively recent development relative to the first two. The purpose of simulation evidence is to model natural phenomena that are too complex to solve analytically by hand. Its central role is to enable interpolation and extrapolation of data using computational techniques grounded in known physical laws. In astronomy, a representative example is the use of N-body simulations to study the dynamical evolution of planetary systems and galaxies. By simulating the gravitational interactions of many bodies simultaneously, astronomers can investigate emergent structures and long-term behaviors that would be analytically intractable.%the volume of the aforementioned data have grown \cite{heyFourthParadigmDataIntensive2009}
+\\The fourth and most recent paradigm is data-intensive science. 
+
+%\section{Methods}
+
+\bibliography{references}
 
 \end{document}
