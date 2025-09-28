@@ -1,4 +1,4 @@
-\documentclass[manuscript,linenumbers,longauthor]{aastex631}
+\documentclass[preprint2,linenumbers, longauthor]{aastex631}
 \begin{document}
 
 \title{The New Age of Big Data In Astronomy: A Review of on the SKA \& LSST}
@@ -14,21 +14,80 @@ Write my abstract here
 \section{Introduction}
 %Start with kind of a summarized overview with the paper
 %Then go to history of data being handled in Astronomy
-%Then go talk about Moore's law
-%Then talk about main idea of this paper, say how its gonna be structured
-The concept of data has long been a central concern throughout the history of astronomy. Data enables scientists to discern the underlying principles governing natural phenomena, exert control over events, and make reliable predictions. It has played a critical role in other time-sensitive domains such as medicine and engineering, where accurate data is essential for decision-making and design. Although the nature of data varies fundamentally across different fields, from medicine to astronomy, one trend has remained consistent: the continual evolution of data science. As explained in The Fourth Paradigm \citep{heyFourthParadigmDataIntensive2009}, this evolution can be characterized through four successive paradigms. In the following sections, I describe the progression of data acquisition across these paradigms and illustrate each using examples from astronomy. I will then explain how SKA and LSST fit into this trajectory and exemplify the emerging era of data-intensive discovery.
+%Then go talk about Moore's law%Then talk about main idea of this paper, say how its gonna be structured
+The concept of data has long been a principal concern throughout the history of astronomy. Data allows scientists to discover natural laws in the universe, have control over events, and make reliable predictions. It has played a critical role in other time-sensitive fields such as medicine and engineering, where accurate data is essential for decision-making and design. Although the nature of data varies fundamentally across different fields, one trend has remained consistent: the continual evolution of data science. As explained in The Fourth Paradigm \citep{heyFourthParadigmDataIntensive2009}, this evolution can be characterized through four successive paradigms. In the following sections, I describe the progression of data acquisition across these paradigms and illustrate each using examples from astronomy. I will then explain how SKA and LSST fit into this trajectory and exemplify the emerging era of data-intensive discovery.
 \subsection{The Paradigms of Data Science}
-The first and most primitive paradigm, as described by Hey, is empirical evidence. Empirical evidence refers to data collected through traditional means, such as direct observation or experimentation of natural phenomena using sensory perception or basic instruments. The primary purpose of empirical evidence is to identify patterns that allow scientists to develop a fundamental understanding of the natural world. Throughout much of human history, empirical evidence represented the most prominent method for extracting knowledge from nature. An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe primarily collected and cataloged data on the position of astronomical bodies using naked-eye observations. However, this method of data collection is associated with several limitations. Empirical evidence can be compromised by human error, the precision of the instruments, and, most importantly, the relatively slow pace of data acquisition compared to subsequent paradigms.
-\\ \hspace*{2em}The second paradigm is analytical evidence. Analytical evidence represents the second most prominent mode of scientific inquiry in terms of longevity. The primary purpose of analytical evidence is to construct mathematical formulas and theoretical frameworks based on empirical data. Unlike the first paradigm, which merely demonstrates that phenomena occur, the second paradigm seeks to explain why they occur. An example of the second paradigm in astronomy is the work of Johannes Kepler, a student of Tycho Brahe, who used Brahe's empirical observations to derive the laws of planetary motion \citep{heyFourthParadigmDataIntensive2009}. By transforming raw observational data into mathematical laws, Kepler exemplified how analytical evidence advances scientific understanding beyond description to explanation.
-\\ \hspace*{2em}The third paradigm is simulation evidence, a relatively recent development with respect to the first two. The purpose of simulation evidence is to model natural phenomena that are too complex to solve analytically by hand. Its central role is to enable interpolation and extrapolation of data using computational techniques grounded in known physical laws. In astronomy, a representative example is the use of N-body simulations to study the dynamical evolution of planetary systems and galaxies. By simulating the gravitational interactions of many bodies simultaneously, astronomers can investigate emergent structures and long-term behaviors that would be analytically intractable.
-\\\hspace*{2em}The fourth and most recent paradigm is data-intensive science. This paradigm is characterized by the unprecedented scale, velocity, and complexity of data acquisition, driven in part by exponential advances in computational power and detector technologies, often associated with Moore's law. Unlike earlier paradigms, which focused on observation, theory, or simulation, data-intensive science emphasizes the ability to manage, analyze, and interpret vast datasets that exceed the capacity of traditional methods. While this exponential growth in data has enabled transformative discoveries, it also introduces significant challenges related to storage, processing, and accessibility. 
-\subsection{The Main Idea}
-\hspace*{2em}Astronomy has become one of the most prominent trailblazers of this paradigm. Modern observatories now generate petabyte-scale data that need new strategies for data management and analysis. The fourth paradigm in turn reshapes the scientific process itself. Instead of discoveries being made from observation or theory, they are now being made from interpreting massive data sets. However, these advances also expose alarming issues, including bottlenecks in the data pipeline, the storage of aforementioned data, the increase in skill needed to handle the data, and concerns regarding open access to data. The field of astronomy is both a beneficiary and a victim of this data-intensive transition. This paper therefore seeks to review the technical and scientific issues surrounding big data in astronomy by examining four case studies: MeerKAT, The Sloan Digital Sky Survey (SDSS), The Legacy Survey of Space and Time (LSST), and The Square Kilometre Array (SKA). These facilities collectively highlight the scope of astronomical data, the methods of its acquisition, their relative successes, the ongoing challenges, and the solutions currently in use.
-\\ \hspace*{2em} What actually are these four astronomical facilities and why did I chose them to represent the inflation of data science in Astronomy? I plan to answer this question in this section.
-\\ \hspace*{2em}The reason for observing these four specific astronomical facilities is simple. Although they are inrefutably part of the fourth paradigm, MeerKAT and SDSS are precursors to SKA and LSST. Because of this, I plan on mainly using SKA and LSST 
-\\ 
+The first and most primitive paradigm, as described by Hey, is empirical evidence. 
+Empirical evidence refers to data collected through traditional means, such as direct observation or experimentation of natural phenomena using sensory perception or basic instruments. 
+The primary purpose of empirical evidence is to identify patterns that allow scientists to develop a fundamental understanding of the natural world. 
+Throughout much acquisition human history, empirical evidence represented the most prominent method for extracting knowledge from nature. 
+An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe primarily collected and cataloged data on the position of astronomical bodies using naked-eye observations. 
+However, this method of data collection is associated with several limitations. Empirical evidence can be compromised by human error, the precision of the instruments, and, most importantly, the relatively slow pace of data acquisition compared to subsequent paradigms.
+
+The second paradigm is analytical evidence. Analytical evidence represents the second most prominent mode of scientific inquiry in terms of longevity. 
+The primary purpose of analytical evidence is to construct mathematical formulas and theoretical frameworks based on empirical data. 
+Unlike the first paradigm, which merely demonstrates that phenomena occur, the second paradigm seeks to explain why they occur. 
+An example of the second paradigm in astronomy is the work of Johannes Kepler, a student of Tycho Brahe, who used Brahe's empirical observations to derive the laws of planetary motion \citep{heyFourthParadigmDataIntensive2009}. 
+By transforming raw observational data into mathematical laws, Kepler exemplified how analytical evidence advances scientific understanding beyond description to explanation.
+
+The third paradigm is simulation evidence, a relatively recent development with respect to the first two. The purpose of simulation evidence is to model natural phenomena that are too complex to solve analytically by hand. 
+Its central role is to enable interpolation and extrapolation of data using computational techniques grounded in known physical laws. 
+In astronomy, an example is the use of N-body simulations to study the dynamical evolution of planetary systems and galaxies. 
+By simulating the gravitational interactions between multiple bodies simultaneously, astronomers can decipher theoretical structures and determine long-term behaviors that would be analytically impossible to solve.
+
+The fourth and most recent paradigm is data-intensive science. 
+This paradigm is characterized by the unprecedented scale, velocity, and complexity of data acquisition, driven in part by exponential advances in computational power and detector technologies, often associated with Moore's law. 
+Unlike earlier paradigms, which focused on observation, theory, or simulation, data-intensive science emphasizes the ability to manage, analyze, and interpret vast datasets that exceed the capacity of traditional methods. 
+While this exponential growth in data has enabled transformative discoveries, it also introduces significant challenges related to storage, processing, and accessibility. 
+
+\subsection{The Rise of Big Data in Astronomy}
+Astronomy has become one of the most prominent trailblazers of this paradigm. Modern observatories now generate petabyte-scale data that need new strategies for data management and analysis. 
+The fourth paradigm in turn reshapes the scientific process itself. Instead of discoveries being made from observation or theory, they are now being made from interpreting massive data sets. 
+However, these advances also expose alarming issues, including bottlenecks in the data pipeline, the storage of aforementioned data, the increase in skill needed to handle the data, and concerns regarding open access to data. 
+The field of astronomy is both a beneficiary and a victim of this data-intensive transition. 
+
+The exponential growth of data acquisition can be attributed to Moore's law. Moore's law is an observation coined by Cofounder of Intel, Gordon E. Moore in his paper titled, "Cramming more components onto integrated circuits". 
+In said paper, Moore explains that the number of components that make up an integrated circuit increase approximately at a rate of a factor of 2 per year.
+Moore also stated that this growth is not sustainable more many reasons, the most relevant being the fact that techniques to handle such complex circuits lag behind in terms of development \cite{mooreCrammingMoreComponents2006}.
+
+Moore's law can be seen in many data-intensive fields, such as astronomy.
+When applied, it explains both the recent development of Big Data in astronomy, and accurately predicts the present issue that methods being used for analyzing said data is lagging behind, causing the mentioned issues.
+
+This paper therefore seeks to review the rise of Big Data in Astronomy and the technical and scientific issues surrounding it by examining four case studies: MeerKAT, The Sloan Digital Sky Survey (SDSS), The Legacy Survey of Space and Time (LSST), and The Square Kilometre Array (SKA). 
+These facilities collectively highlight the scope of contemporary astronomical data, the methods of its acquisition, their relative successes, the ongoing challenges, and the solutions currently in use. I plan on doing this by reviewing the approach that all four case studies have taken or plan to take to collect data.
+
+\subsection{A Rough Overview of the Case Studies}
+To demonstrate the rise of Big Data in Astronomy, we must first examine the components that make up the SDSS. The SDSS is vital to this paper, as it is one of the earliest large-scale optical surveys that signifies the start of the fourth paradigm. 
+Because of its relative early involement in the Big Data stage of astronomy, and its use of collecting optical data, I plan to compare the SDSS to LSST. The SDSS
+consists of three main telescopes.
+
+The first of the three is "The Sloan Foundation 2.5m Telescope". 
+The Sloan Foundational Telescope is stationed at the Apache Point Observatory in New Mexico, where it observes the sky in the northern hemisphere. 
+The Sloan foundational telescope is able to observe a 3$^\circ$ field of view through the use of its two corrector lenses, that help with distortion. \cite{gunn25TelescopeSloan2006}
+
+Another vital telescope used in the SDSS project is "The Irénée du Pont Telescope at Las Campanas Observatory" . The Irénée du Pont Telescope differs from the 2.5m Telescope as it is stationed in Chile, where it observes the southern hemisphere instead. 
+Similar to the first mentioned telescope, the Irénée du Pont Telescope displays a 2.1$^\circ$ field of view with only one corrector lens. \cite{bowenOpticalDesign40in1973}
+
+The third yet most vital telescope is the "NMSU 1-meter Telescope". The NMSU telescope is stationed in the Apache Point Observatory alongside the Sloan Foundational Telescope. 
+The NMSU telescope serves a purpose the former two don't because "Obtaining spectra of these bright sources is a challenge for the Sloan 2.5 m telescope and not practical through drilling and observing specialized plugplates" \cite{majewskiApachePointObservatory2017}. 
+In essense, by using optical fibers connected to a spectrograph, the NMSU telescope observes stars that are too bright for the other two to observe. 
+The combination of these telescopes allow for both optical data to be collected through multiple surveys \cite{holtzmanNMSU1Telescope2010}
+
+the SDSS is made up of multiple subsurveys. The eBoss, a continuation of BOSS, utilize spectrographs to observe light at a wavelength range of 3600-10,400~\AA
+An additional subsurvey is the APOGEE-2, a continuation of APOGEE. It uses spectrographs similar to eBOSS, but APOGEE-2 collectes near-infrared objects 
+MaNGA is a subsurvey that collect integral field unit measurements of 10,000 nearby galaxies using spectrographs.
+MARVELS is another subservey that makes up the SDSS, it was built specifically to obtain radial velocity measurements of stars with high-precision in hopes of finding exoplanets.
+
+The MeerKAT is another survey essential to demonstrate how Big Data has evolved in the field of Astronomy.
+MeerKAT became fully operational in 2018 in in Northern Cape Province, South Africa. It has acted as a predecessor to the SKA, as they both collect radio data. \cite{jonasMeerKATRadioTelescope2018}
+
+the MeerKAT has produced and is producing a total of 10 large survey projects. 
+
+
+The second vital case study is the MeerKAT survey. 
 \section{Methods}
 
 \bibliography{references}
 
 \end{document}
+

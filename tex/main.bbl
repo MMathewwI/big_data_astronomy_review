@@ -5,7 +5,25 @@
 \providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
+\bibitem[{Bowen \& Vaughan(1973)}]{bowenOpticalDesign40in1973}
+Bowen, I.~S., \& Vaughan, A.~H. 1973, Applied Optics, 12, 1430, \dodoi{10.1364/AO.12.001430}
+
+\bibitem[{Gunn {et~al.}(2006)Gunn, Siegmund, Mannery, Owen, Hull, Leger, Carey, Knapp, York, Boroski, Kent, Lupton, Rockosi, Evans, Waddell, Anderson, Annis, Barentine, Bartoszek, Bastian, Bracker, Brewington, Briegel, Brinkmann, Brown, Carr, Czarapata, Drennan, Dombeck, Federwitz, Gillespie, Gonzales, Hansen, Harvanek, Hayes, Jordan, Kinney, Klaene, Kleinman, Kron, Kresinski, Lee, Limmongkol, Lindenmeyer, Long, Loomis, McGehee, Mantsch, Neilsen, Neswold, Newman, Nitta, Peoples, Pier, Prieto, Prosapio, Rivetta, Schneider, Snedden, \& Wang}]{gunn25TelescopeSloan2006}
+Gunn, J.~E., Siegmund, W.~A., Mannery, E.~J., {et~al.} 2006, The Astronomical Journal, 131, 2332, \dodoi{10.1086/500975}
+
 \bibitem[{Hey {et~al.}(2009)Hey, Tansley, \& Tolle}]{heyFourthParadigmDataIntensive2009}
 Hey, T., Tansley, S., \& Tolle, K. 2009, Microsoft Research
+
+\bibitem[{Holtzman {et~al.}(2010)Holtzman, Harrison, \& Coughlin}]{holtzmanNMSU1Telescope2010}
+Holtzman, J.~A., Harrison, T.~E., \& Coughlin, J.~L. 2010, Advances in Astronomy, 2010, 193086, \dodoi{10.1155/2010/193086}
+
+\bibitem[{Jonas \& {the MeerKAT Team}(2018)}]{jonasMeerKATRadioTelescope2018}
+Jonas, J., \& {the MeerKAT Team}. 2018, in Proceedings of {{MeerKAT Science}}: {{On}} the {{Pathway}} to the {{SKA}} --- {{PoS}}({{MeerKAT2016}}) (Stellenbosch, South Africa: Sissa Medialab), 001, \dodoi{10.22323/1.277.0001}
+
+\bibitem[{Majewski {et~al.}(2017)Majewski, Schiavon, Frinchaboy, Prieto, Barkhouser, Bizyaev, Blank, Brunner, Burton, Carrera, Chojnowski, Cunha, Epstein, Fitzgerald, P{\'e}rez, Hearty, Henderson, Holtzman, Johnson, Lam, Lawler, Maseman, M{\'e}sz{\'a}ros, Nelson, Nguyen, Nidever, Pinsonneault, Shetrone, Smee, Smith, Stolberg, Skrutskie, Walker, Wilson, Zasowski, Anders, Basu, Beland, Blanton, Bovy, Brownstein, Carlberg, Chaplin, Chiappini, Eisenstein, Elsworth, Feuillet, Fleming, {Galbraith-Frew}, Garc{\'i}a, {Garc{\'i}a-Hern{\'a}ndez}, Gillespie, Girardi, Gunn, Hasselquist, Hayden, Hekker, Ivans, Kinemuchi, Klaene, Mahadevan, Mathur, Mosser, Muna, Munn, Nichol, O'Connell, Parejko, Robin, {Rocha-Pinto}, Schultheis, Serenelli, Shane, Aguirre, Sobeck, Thompson, Troup, Weinberg, \& Zamora}]{majewskiApachePointObservatory2017}
+Majewski, S.~R., Schiavon, R.~P., Frinchaboy, P.~M., {et~al.} 2017, The Astronomical Journal, 154, 94, \dodoi{10.3847/1538-3881/aa784d}
+
+\bibitem[{Moore(2006)}]{mooreCrammingMoreComponents2006}
+Moore, G.~E. 2006, IEEE Solid-State Circuits Society Newsletter, 11, 33, \dodoi{10.1109/N-SSC.2006.4785860}
 
 \end{thebibliography}
