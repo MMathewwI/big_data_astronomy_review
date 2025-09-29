@@ -56,7 +56,7 @@ When applied, it explains both the recent development of Big Data in astronomy, 
 This paper therefore seeks to review the rise of Big Data in Astronomy and the technical and scientific issues surrounding it by examining four case studies: MeerKAT, The Sloan Digital Sky Survey (SDSS), The Legacy Survey of Space and Time (LSST), and The Square Kilometre Array (SKA). 
 These facilities collectively highlight the scope of contemporary astronomical data, the methods of its acquisition, their relative successes, the ongoing challenges, and the solutions currently in use. I plan on doing this by reviewing the approach that all four case studies have taken or plan to take to collect data.
 
-\subsection{A Rough Overview of the Case Studies}
+\subsection{A Qualitative Analysis of Relevant Survey Data}
 To demonstrate the rise of Big Data in Astronomy, we must first examine the components that make up the SDSS. The SDSS is vital to this paper, as it is one of the earliest large-scale optical surveys that signifies the start of the fourth paradigm. 
 Because of its relative early involement in the Big Data stage of astronomy, and its use of collecting optical data, I plan to compare the SDSS to LSST. The SDSS
 consists of three main telescopes.
@@ -73,18 +73,59 @@ The NMSU telescope serves a purpose the former two don't because "Obtaining spec
 In essense, by using optical fibers connected to a spectrograph, the NMSU telescope observes stars that are too bright for the other two to observe. 
 The combination of these telescopes allow for both optical data to be collected through multiple surveys \cite{holtzmanNMSU1Telescope2010}
 
-the SDSS is made up of multiple subsurveys. The eBoss, a continuation of BOSS, utilize spectrographs to observe light at a wavelength range of 3600-10,400~\AA
-An additional subsurvey is the APOGEE-2, a continuation of APOGEE. It uses spectrographs similar to eBOSS, but APOGEE-2 collectes near-infrared objects 
-MaNGA is a subsurvey that collect integral field unit measurements of 10,000 nearby galaxies using spectrographs.
-MARVELS is another subservey that makes up the SDSS, it was built specifically to obtain radial velocity measurements of stars with high-precision in hopes of finding exoplanets.
+the SDSS is made up of multiple subsurveys. The eBoss, a continuation of BOSS, utilize spectrographs to observe light at a wavelength range of 3600-10,400~\AA \cite{dawsonSDSSIVEXTENDEDBARYON2016}.
+An additional subsurvey is the APOGEE-2, a continuation of APOGEE. It uses spectrographs similar to eBOSS, but APOGEE-2 collectes near-infrared objects \cite{majewskiApachePointObservatory2017}. 
+MaNGA is a subsurvey that collect integral field unit measurements of 10,000 nearby galaxies using spectrographs \cite{bundyOVERVIEWSDSSIVMaNGA2014}.
+MARVELS is another subservey that makes up the SDSS, it was built specifically to obtain radial velocity measurements of stars with high-precision in hopes of finding exoplanets \cite{bundyOVERVIEWSDSSIVMaNGA2014a}.
+
 
 The MeerKAT is another survey essential to demonstrate how Big Data has evolved in the field of Astronomy.
-MeerKAT became fully operational in 2018 in in Northern Cape Province, South Africa. It has acted as a predecessor to the SKA, as they both collect radio data. \cite{jonasMeerKATRadioTelescope2018}
+MeerKAT became fully operational in 2018 in the Northern Cape Province of South Africa. It serves as a precursor to the Square Kilometre Array (SKA), as both facilities focus on the collection of radio data \cite{jonasMeerKATRadioTelescope2018}.
+MeerKAT comprises 64 antennas distributed over a radius of approximately 600 miles. These antennas operate across frequency bands ranging from 350 MHz to 3500 MHz \cite{goedhartMeerKATSpecifications2025}.
 
-the MeerKAT has produced and is producing a total of 10 large survey projects. 
+MeerKAT has conducted and continues to conduct ten major survey projects. For the sake of conciseness, this discussion will focus on five of these surveys.
+One is the "Looking At the Distant Universe with the MeerKAT Array" (LADUMA) survey.
+The objective of the LADUMA survey is to "use HI observations to study galaxy evolution over two thirds of the age of the universe" \cite{blythLADUMALookingDistant2018}. 
+LADUMA has used "shorter observations with MeerKAT's “Phase 1” (0.9-1.75 GHz) receivers
+would be followed by longer observations in an expanded “Phase 4” (0.58-2.5 GHz) band" \cite{blythLADUMALookingDistant2018}.
+Although the LADUMA survey is still ongoing, a portion of the data has already been released and will be discussed in the Methods section.
+
+the MeerKAT Absorbtion Line Survey (MALS) is a survey conducted using MeerKAT using by collecting data about HI and OH absorvers at $z < 0.4$ and $z < 0.7$, where z is the redshift of a galaxy. 
+The reason for using the HI observation specifically is because it is a descriptive tracer of the cold neutral medium in a galaxy. 
+The cold neutral medium give scientist details on what the physical conditions of the interstellar medium of said galaxy is. This, in turn, allows scientists to extrapolate data on the star formation in the galaxy \cite{guptaBlindOHAbsorption2021}.
+
+Another survey, the "The Hunt for Dynamic and Explosive Radio Transients with MeerKAT" (ThunderKAT), aims to find, identify and understand high-energy astrophysical processes via their radio emission (often in concert with observations at other wavelengths)." 
+In essence, ThunderKAT analyzes radio data to catalogue high-energy phenomena, including supernovae, microquasars, and similar events \cite{woudtThunderKATMeerKATLarge2018}.
+
+Another notable survey under MeerKAT is the MeerKAT HI Observations of Nearby Galactic Objects: Observing Southern Emitters (MHONGOOSE). this survey aims to catalogue the properties of HI gas in "around 30 nearby star-forming spiral and dwarf galaxies to extremely low H i column densities". 
+MHONGOOSE is remarkable by its notably higher sensitivity compared to previous surveys such as HALOGAS and THINGS. This sensitivity is crucial for investigating how low-column-density gas influences the cosmic web and galactic accretion processes \cite{deblokMHONGOOSEMeerKATNearby2024}.
+
+The final survey considered here is the "MeerKAT International GHz Tiered Extragalactic Exploration" (MIGHTEE). MIGHTEE utilizes radio data spanning 900–1670 MHz, achieving a resolution of approximately 6 arcseconds.
+
+Together, these five surveys, along with the remaining projects, emphasize the pivotal role of MeerKAT in the era of Big Data astronomy. They are at the forefront of scientific research and are producing data volumes on the order of petabytes.
+
+Having examined MeerKAT, its only natural to examine its successor, the SKA. The SKA has built on technical and scientific achievements paved by MeerKAT.
+The SKA covers an area of approximately 3,000 km with antennas, which collect area up to 106 m$^2$ of the sky. Because of its astonishing techniqical prowess and complexity, The SKA represents the start of a new frontier for Big Data astronomy.
+One technology being used is aperture synthesis, which allows for the signals from antennas to be in phase, allowing to reduce noise. Another innovation is the use of large centimeter wavelength antennas, which allow for data to travel across distances at high speeds. This, in turn, allows for data to be analyzed and processed quicker and optimized, which will be discussed in further detail in the Methods section. \cite{dewdneySquareKilometreArray2009}.
+
+Alongside the SKA is its optical counterpart, the LSST, which similarly represents a major advance in the evolution of Big Data in astronomy
+The LSST is a successor to the SDSS, as both projects observe optical data. The LSST, however, has much more sophisticated goals. The LSST plans to address 4 key scientific issues: Investigating dark energy and dark matter, cataloguing the solar system, collecting data for sky surveys, and mapping the Milky way.
+To do all this, the LSST uses a 3.2-gigapixel camera with a sampling of 9.6 deg$^2$ field of view. These cameras are equipped with highly resistant sensors reinforced with silicon \cite{ivezicLSSTScienceDrivers2019}. All these inventions alongside others allow for the LSST to acquire complex and immense data sets never seen before.
+
+Truly, the SDSS, MeerKAT, SKA, and LSST are the pinnacle of human ingenuiety. They will allow for unprecedented data rates for complex astrophysical events and phenomena.
+In the following Methods section, I describe how the data is collected, processed, analyzed, and stored. I then compare SDSS and MeerKAT to their respective successor in order to address the issue of inflation of Big Data in astronomy.
 
 
-The second vital case study is the MeerKAT survey. 
+
+
+
+
+
+
+
+
+
+
 \section{Methods}
 
 \bibliography{references}

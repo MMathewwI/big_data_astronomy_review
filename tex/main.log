@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  28 SEP 2025 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  28 SEP 2025 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,33 +493,47 @@ Underfull \hbox (badness 1275) in paragraph at lines 53--55
 []\OT1/cmr/m/n/12 Moore's law can be seen in many data-
  []
 
-[2] (./main.bbl
-Overfull \vbox (8.6811pt too high) has occurred while \output is active []
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+[]\OT1/cmr/m/n/12 the MeerKAT Ab-sorb-tion Line Sur-vey
+ []
 
 
-Overfull \vbox (8.6811pt too high) has occurred while \output is active []
+Underfull \hbox (badness 1565) in paragraph at lines 97--99
+[]\OT1/cmr/m/n/12 Another sur-vey, the "The Hunt for Dy-
+ []
 
- [3]) [4] (./main.aux)
+
+Underfull \hbox (badness 2689) in paragraph at lines 100--102
+\OT1/cmr/m/n/12 the MeerKAT HI Ob-ser-va-tions of Nearby
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 103--104
+[]\OT1/cmr/m/n/12 The fi-nal sur-vey con-sid-ered here is the
+ []
+
+[4] (./main.bbl) [5] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 16B2C9B963D8D2664EF3972A1911D1E7;890.
+(rerunfilecheck)             Checksum: 54843E060EBCBDE42BBAE46040177286;940.
  ) 
 Here is how much of TeX's memory you used:
- 12912 strings out of 473579
- 191311 string characters out of 5732264
- 1958960 words of memory out of 5000000
- 35635 multiletter control sequences out of 15000+600000
+ 12954 strings out of 473579
+ 192802 string characters out of 5732264
+ 1963960 words of memory out of 5000000
+ 35666 multiletter control sequences out of 15000+600000
  569816 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,6n,93p,1074b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (4 pages, 149565 bytes).
+ 90i,6n,93p,3053b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (5 pages, 175151 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
