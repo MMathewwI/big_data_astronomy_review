@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1759121618.73945 "main.aux" "main.bbl" "main" 1759121621.37228 0
-  "./references.bib" 1759120035 65381 1630609963a075e5c755e0b398be5cd4 ""
+["bibtex main"] 1759647494.65578 "main.aux" "main.bbl" "main" 1759647499.24841 0
+  "./references.bib" 1759637598 66681 04b954df6acd263804bfcd6846aaba6a ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1725840509 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "main.aux" 1759121620 12286 6288ee231eea3e7046f6cb29264ddbb5 "pdflatex"
+  "main.aux" 1759647497 13042 e2d1294956766d35ca7d5d7c65b59791 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1759121619.24453 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1759121621.37284 0
+["pdflatex"] 1759647495.46743 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1759647499.24913 0
   "aastex631.cls" 1758742918 239479 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1759121613 15599 7329c69b03b5d63b64a142484f2381c9 ""
+  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1759647490 20606 a1b947f5e74c192c16388e98d342dc44 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725843524 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1725844058 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1725840698 1004 54797486969f23fa377b128694d548df ""
@@ -47,6 +47,7 @@
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1725840698 32080 340ef9bf63678554ee606688e7b5339d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1725840698 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1725840698 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1725840698 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1725840698 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1725840698 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1725840698 32762 7fee39e011c23b3589931effd97b9702 ""
@@ -119,11 +120,12 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725849621 5543950 2aa73a438b7054b2327b796fbe5f4275 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725849800 8239325 50797afa5a41a53037c3ab6978671a7e ""
   "c:/texlive/2024/texmf.cnf" 1725849597 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1759121620 12286 6288ee231eea3e7046f6cb29264ddbb5 "pdflatex"
-  "main.bbl" 1759121619 12831 7c8ce33d33ae38c7d1b1d641daeb67b4 "bibtex main"
-  "main.out" 1759121620 940 54843e060ebcbde42bbae46040177286 "pdflatex"
-  "main.tex" 1759121613 15599 7329c69b03b5d63b64a142484f2381c9 ""
-  "main.toc" 1759121620 473 f48b329820f0086231672c2ff29923dc "pdflatex"
+  "gunn_table_5.png" 1759645037 162226 1175916ccbb900e8e6584d84db691d6b ""
+  "main.aux" 1759647497 13042 e2d1294956766d35ca7d5d7c65b59791 "pdflatex"
+  "main.bbl" 1759647495 13004 14f8adbac3a991c4f9db8ff9fdc5e12e "bibtex main"
+  "main.out" 1759647497 1606 bcc9c863ca4775169ff8efb8953e419a "pdflatex"
+  "main.tex" 1759647490 20606 a1b947f5e74c192c16388e98d342dc44 ""
+  "main.toc" 1759647497 764 a16b4e7308caf561714fc4fa64cf0b19 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

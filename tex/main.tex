@@ -1,4 +1,5 @@
-\documentclass[preprint2,linenumbers, longauthor]{aastex631}
+\documentclass[preprint,linenumbers, longauthor]{aastex631}
+\usepackage{graphicx}
 \begin{document}
 
 \title{The New Age of Big Data In Astronomy: A Review of on the SKA \& LSST}
@@ -6,7 +7,13 @@
 \affiliation{The University of Illinois at Urbana-Champaign}
 
 \begin{abstract}
-Write my abstract here
+I'm making my abstract my to do list for now
+
+\textbf{1: Make my citations for the website in my intro better}
+
+\textbf{2: Finish adding more details about the SDSS camera}
+
+\textbf{3: Make figure 1 look better. Cite Gunn correctly}
 \end{abstract}
 
 \tableofcontents
@@ -116,18 +123,75 @@ Truly, the SDSS, MeerKAT, SKA, and LSST are the pinnacle of human ingenuiety. Th
 In the following Methods section, I describe how the data is collected, processed, analyzed, and stored. I then compare SDSS and MeerKAT to their respective successor in order to address the issue of inflation of Big Data in astronomy.
 
 
-
-
-
-
-
-
-
-
-
-
 \section{Methods}
 
+%Methods:
+%○ Approach to collecting Data
+%● Talk about how the LSST and SKA are collecting data
+%○ The nature of their data, ie the scope, type, etc
+%■ LSST is optical imaging
+%■ SKA is radio interferometry
+%○ How they’re storing/archiving the data.
+%○ How they’re generally processing their data
+%○ Transparency of their respective Data pipeline
+%○ Real time processing techniques (NOTE: NOT THE SAME AS THE METHODS
+%DATA PROCESSING, THIS ONE IS FOR REAL TIME PROCESSING)
+    %■ Show new techniques being developed to combat issues such as
+    %optimization and time important issues
+
+\textbf{The new text starts here:}
+\subsection{Approach to collecting Data}
+%LSST FIRST??
+The methods section in this paper will methodically analyze the approaches that each four survey has taken.
+First we will analyze properties with the data, such as the nature of the data, the scope, type, etc.
+We will then discuss how the surveys are storing and archiving the data.
+After that, we will talk about how they're processing their data generally.
+And lastly, we will talk about how they are using real time processing.
+The reason for using these four surveys is to compare the significant growth in big data in the field of astronomy.
+This growth is important to discuss about as later in my discussion section, I will talk about how this exessive growth is
+causing a cascade of issues because we simply cannot keep up.
+
+
+The first survey we will talk about is the SDSS. The SDSS contains a 2.5 m telescope, which is vital to the SDSS.
+The telescope is insanely complex, but I plan to talk about 5 main innovations the 2.5 m telescope has brought. I plan to do this by first explaining what the innovations of the telescopes broadly, then in detail. Last, I will explain how it factors in with collecting data.
+The 2.5 m telescope had a crucial job; it had to observe the sky through optical data with extreme accuracy throughout years.
+In order to do this big job, the 2.5 m telescope had 5 important innovations. 
+
+\textbf{THE SDSS SECTION IS NOT DONE YET, add more detail about the camera and other stuff in the Gunn paper section 2.3. Its a little complex.}
+
+The first innovation is the SDSS camera. According to Gunn et al.'s 2006 paper, the camera is made up of "30 2048 x 2048 SITe/Tektronix Charge-Coupled Devices (CCDs) and 24 2048 x 400 CCDS" \cite{gunn25TelescopeSloan2006}. 
+A CCD is one of the most important detectors when it comes to converting observations into data in observational astronomy.
+A CCD works by absorbing photons. These photons generate electrons due to the photoelectric effect. These electrons are run through a voltage over periods of time, which detect the amount of electrons. Lastly, the number is stored into a digital image pixel \cite{lesserSummaryChargeCoupledDevices2015}.
+
+
+The second innovation of the 2.5 m Telescope is the efficient two fiber-fed double spectrographs that are able to obtain imaging data from 3800-9200 \AA \space and angles ranging from 0-$90^\circ$ \cite{gunn25TelescopeSloan2006}. 
+In Gunn's 2006 paper, he compiles the results of the performance of the spectrographs.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{gunn_table_5.png}
+  \caption{Figure 5 of Gunn's 2006 Paper}
+  \label{fig:SDSS_Table}
+\end{figure}
+
+In figure 5, $\lambda$ symbolizes the wavelength of light. Angle symbolizes the field angle. $f_b$ symbolzies the best-focus distance, which is the position that gives the best focus.
+$h/dh$ symbolizes the lateral color. $D$ represents the longitutal differences from the best focus. Lastly, $\epsilon$ is the rms image diameter.
+The second innovation of the 2.5 m Telescope is the efficient two fiber-fed double spectrographs that are able to obtain imaging data from 3800-9200 \AA \space and angles ranging from 0-$90^\circ$ \cite{gunn25TelescopeSloan2006}. 
+
+The more important symbols to observe are the lateral color and longitutal differences. \textbf{maybe explain what these two things are? Do more research to figure out what a good number for these 2 are}. 
+The closer to 0 these parameters are, the higher quality the resolution of an image is. According to Figure 5 of Gunn's Paper, throughout all wavelengths and angles besides 5300-6500, the lateral color and longitutal differeences are nearly 0.
+All in all, the SDSS camera is extremely effective.
+
+The third innovation of the 2.5 m telescope is a data acquisition system that accurately assesses data and stores it accordingly while using real-time processing to maintain quality \cite{gunn25TelescopeSloan2006}.
+
+
+
+
+
+
+Next there is the LSST
+\subsection{Real Time Processing}
+
+\subsection{Transparency of their respective Data Pipeline}
 \bibliography{references}
 
 \end{document}
