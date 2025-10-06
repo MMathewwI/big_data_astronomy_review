@@ -14,6 +14,10 @@ I'm making my abstract my to do list for now
 \textbf{2: Finish adding more details about the SDSS camera}
 
 \textbf{3: Make figure 1 look better. Cite Gunn correctly}
+
+\textbf{3: Make the corrections given by Professor Kemball}
+
+
 \end{abstract}
 
 \tableofcontents
@@ -122,6 +126,7 @@ To do all this, the LSST uses a 3.2-gigapixel camera with a sampling of 9.6 deg$
 Truly, the SDSS, MeerKAT, SKA, and LSST are the pinnacle of human ingenuiety. They will allow for unprecedented data rates for complex astrophysical events and phenomena.
 In the following Methods section, I describe how the data is collected, processed, analyzed, and stored. I then compare SDSS and MeerKAT to their respective successor in order to address the issue of inflation of Big Data in astronomy.
 
+\textbf{The new text starts here:}
 
 \section{Methods}
 
@@ -139,59 +144,125 @@ In the following Methods section, I describe how the data is collected, processe
     %■ Show new techniques being developed to combat issues such as
     %optimization and time important issues
 
-\textbf{The new text starts here:}
-\subsection{Approach to collecting Data}
 %LSST FIRST??
-The methods section in this paper will methodically analyze the approaches that each four survey has taken.
-First we will analyze properties with the data, such as the nature of the data, the scope, type, etc.
-We will then discuss how the surveys are storing and archiving the data.
-After that, we will talk about how they're processing their data generally.
-And lastly, we will talk about how they are using real time processing.
-The reason for using these four surveys is to compare the significant growth in big data in the field of astronomy.
-This growth is important to discuss about as later in my discussion section, I will talk about how this exessive growth is
-causing a cascade of issues because we simply cannot keep up.
+\subsection{The SDSS's Data Pipeline}
+
+This section carefully examines how each of the four major astronomical surveys collects and processes its data. 
+It begins by describing the nature, scope, and type of the data. 
+Next, it discusses how each survey collecs and archives its data, followed by an explanation of their general data processing methods. 
+Finally, it considers the use of real-time data processing. 
+By comparing these surveys, this study highlights the rapid growth of big data in astronomy, a trend that has created challenges for data storage, processing, and analysis. 
+These challenges will be discussed further in the discussion section.
+
+The first survey examined is the Sloan Digital Sky Survey (SDSS). The SDSS I plan on splitting  the SDSS into its three main components, the 2.5 m Telescope, the Irénée du Pont Telescope, and the NMSU 1-meter telescope.
+As discussed previously, I will explain how each telescope collects data, then I will explain how the SDSS processes the data both generally and in real-time. 
+Lastly, I will talk about the open data policy the SDSS has employed.
 
 
-The first survey we will talk about is the SDSS. The SDSS contains a 2.5 m telescope, which is vital to the SDSS.
-The telescope is insanely complex, but I plan to talk about 5 main innovations the 2.5 m telescope has brought. I plan to do this by first explaining what the innovations of the telescopes broadly, then in detail. Last, I will explain how it factors in with collecting data.
-The 2.5 m telescope had a crucial job; it had to observe the sky through optical data with extreme accuracy throughout years.
-In order to do this big job, the 2.5 m telescope had 5 important innovations. 
+\subsubsection{Data Collection}
+Although the SDSS is a complex survey, it can be divided into several major components, each of which contributes to the collection of astrophysical data.
+The 2.5-meter telescope plays a central role in the operations of the SDSS. It was designed to conduct precise optical observations of the sky over many years. 
 
-\textbf{THE SDSS SECTION IS NOT DONE YET, add more detail about the camera and other stuff in the Gunn paper section 2.3. Its a little complex.}
+\textbf{(1) The SDSS 2.5 m Telescope:}  
+According to Gunn et al. (2006), the SDSS camera contains “30 2048 x 2048 Scientific Imaging Technologies Charge-Coupled Devices (CCDs) and 24 2048 x 400 CCDs” \cite{gunn25TelescopeSloan2006}. 
+A CCD is a detector that converts incoming light into an electronic signal. 
+When photons strike the CCD, they generate electrons through the photoelectric effect. 
+Using applied voltages, the resulting charge is measured based on the number of electrons produced. 
+That measurement is then converted into a digital value and stored as a pixel, forming an image \cite{lesserSummaryChargeCoupledDevices2015}.
 
-The first innovation is the SDSS camera. According to Gunn et al.'s 2006 paper, the camera is made up of "30 2048 x 2048 SITe/Tektronix Charge-Coupled Devices (CCDs) and 24 2048 x 400 CCDS" \cite{gunn25TelescopeSloan2006}. 
-A CCD is one of the most important detectors when it comes to converting observations into data in observational astronomy.
-A CCD works by absorbing photons. These photons generate electrons due to the photoelectric effect. These electrons are run through a voltage over periods of time, which detect the amount of electrons. Lastly, the number is stored into a digital image pixel \cite{lesserSummaryChargeCoupledDevices2015}.
+Another major innovation that enables the SDSS to collect data is the pair of fiber-fed double spectrographs, which record imaging data across wavelengths from 3800 to 9200~\AA\ and at field angles between 0 and 90$^{\circ}$ \cite{gunn25TelescopeSloan2006}. 
+present measurements of the optical performance of these instruments, which are summarized in Figure~\ref{fig:SDSS_Table}.
 
-
-The second innovation of the 2.5 m Telescope is the efficient two fiber-fed double spectrographs that are able to obtain imaging data from 3800-9200 \AA \space and angles ranging from 0-$90^\circ$ \cite{gunn25TelescopeSloan2006}. 
-In Gunn's 2006 paper, he compiles the results of the performance of the spectrographs.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.4\textwidth]{gunn_table_5.png}
-  \caption{Figure 5 of Gunn's 2006 Paper}
+  \caption{Figure 5 from Gunn et al. (2006), showing results of the SDSS spectrographs given Wavelength and Angle.}
   \label{fig:SDSS_Table}
 \end{figure}
 
-In figure 5, $\lambda$ symbolizes the wavelength of light. Angle symbolizes the field angle. $f_b$ symbolzies the best-focus distance, which is the position that gives the best focus.
-$h/dh$ symbolizes the lateral color. $D$ represents the longitutal differences from the best focus. Lastly, $\epsilon$ is the rms image diameter.
-The second innovation of the 2.5 m Telescope is the efficient two fiber-fed double spectrographs that are able to obtain imaging data from 3800-9200 \AA \space and angles ranging from 0-$90^\circ$ \cite{gunn25TelescopeSloan2006}. 
+In Figure~5, $\lambda$ represents the wavelength of light, and “Angle” refers to the field angle. 
+$f_b$ is the best-focus distance, which is the position that provides the sharpest image. 
+$h/dh$ represents the lateral color, and $D$ indicates the longitudinal difference from the best focus. 
+Finally, $\epsilon$ is the root mean square (rms) image diameter. 
+Among these parameters, the lateral color and longitudinal difference are the most important for image quality because smaller values indicate sharper images. 
+Based on the data from \cite{gunn25TelescopeSloan2006}, both of these quantities remain close to zero for most wavelengths and field angles, except between roughly 5300 and 6500~\AA, which demonstrates the high optical accuracy of the SDSS spectrographs.
 
-The more important symbols to observe are the lateral color and longitutal differences. \textbf{maybe explain what these two things are? Do more research to figure out what a good number for these 2 are}. 
-The closer to 0 these parameters are, the higher quality the resolution of an image is. According to Figure 5 of Gunn's Paper, throughout all wavelengths and angles besides 5300-6500, the lateral color and longitutal differeences are nearly 0.
-All in all, the SDSS camera is extremely effective.
+The combination of these two innovations alongside others help the 2.5 m telescope collect data at a rate of about 20Gb/hr \cite{luptonSDSSImagingPipelines2007}.
 
-The third innovation of the 2.5 m telescope is a data acquisition system that accurately assesses data and stores it accordingly while using real-time processing to maintain quality \cite{gunn25TelescopeSloan2006}.
+\textbf{(2) The Irénée du Pont Telescope:}  
+Unlike the 2.5 m telescope, the Du Pont Telescope does not rely on CCDs to collect data. According to Bowen's 1973 paper, the telescope is described as a modified Ritchey-Chrétien design with Gascoigne correctors \cite{bowenOpticalDesign40in1973}.
+The Du pont telescope uses a 100-inch primary mirror. Approximately 40\% of the light is reflected to the secondary mirror, obtaining only a 16\% loss of light at that stage. \cite{bowenOpticalDesign40in1973}
+The combination of light from the two aforementioned mirrors are then sent to a 20 inch x 20 inch plate, where monocromatic images are formed.
 
+The du Pont Telescope uses 18.9 inch nonvignetted plates in order to minimize vignetting \cite{bowenOpticalDesign40in1973}. Vignetting is the process where light beds through the lense of a telescope. The bending form a cone of light, which causes images to be darker near the edges and brighter in the center of the image \cite{richardsWhatVignetting2020}.
+Because of the nonvignetted plates, the du Pont Telescope experiences an exceptionally low 3\% percent loss of light \cite{bowenOpticalDesign40in1973}.
 
+Another technology the du Pont Telescope applies is a Gascoigne corrector plate. The plate helps with data collection. The Gasciogne corrector plate is able to be moved, which can help optimize the collection of light in a wanted wavelength \cite{bowenOpticalDesign40in1973}.
+Given a seperation of 1000 mm from the end of the corrector plate to the focus gives an image with a minimized astigmatism for a refractive index of n = 1.47 \cite{bowenOpticalDesign40in1973}.
+At a given wavelength, the change of length which minimizes astigmatism is described in Bowen's paper as
 
+\begin{equation}
+\Delta L = 590\Delta n / (n - 1) = -1250\Delta n
+\end{equation}
 
+Where $\Delta L$ is the change in seperation in millimeters and $\Delta n$ is the difference between a refractive index of 1.47 and the index wanted.
 
+The last technology the du Pont Telescope uses is conical baffles. The reason for this is to promote shielding in the telescope \cite{bowenOpticalDesign40in1973}.
+As explained in the Bowen paper, shielding is necessary in order to protect the photographic plate from light that escapes from the secondary lense due to long time exposure.
+As explained in the Bowen paper, the conic baffles are "located in the space between the incoming beam as it appraoches the primary and the return beam from the secondary to the plate" \cite{bowenOpticalDesign40in1973}.
+Theoretically, the conic baffles have the disatvantage of producing a diffraction pattern. However, as explained by Bowen, this should not majorly affect the images of stars \cite{bowenOpticalDesign40in1973}. 
 
-Next there is the LSST
-\subsection{Real Time Processing}
+\textbf{(3) The New Mexico State University (NMSU) Telescope:}  
+The NMSU telescope takes the most technologically advanced approach to collecting data compared to the 2.5 m telescope and the du Pont Telescope.
+The NMSU telescope uses a camera that has a 2048 x 2048 CCD. The camera is controled by a linux computer, which is connected by fiber optic cables \cite{holtzmanNMSU1Telescope2010}.
 
-\subsection{Transparency of their respective Data Pipeline}
+The data collection of the NMSU telescope is almost fully automated using C++, the only time it is not is when engineering is being done on the telescope \cite{holtzmanNMSU1Telescope2010}.
+The NMSU telescope has a camera which analyzes the brightness level of the sky to see if it is dark enough to start collecting data.
+When the sky becomes dark enough, the telescope initiates its program. The telescope goes through the list and observes said objects \cite{holtzmanNMSU1Telescope2010}.
+Objects can, however, be observed as many times as requested. 
+
+\subsubsection{Data Processing:} 
+ \textbf{NOTE: This is gonna super complex, Study this hard. Its only surface level rn } 
+
+The SDSS processes its data through an innovative acquisition system that records and organizes observations in real time while maintaining strict quality control \cite{gunn25TelescopeSloan2006}. 
+This system ensures that data are processed and stored efficiently without any loss of precision. \cite{gunn25TelescopeSloan2006}. 
+The data pipeline of the SDSS can be described by two different fields of data, the imaging pipeline and the spectroscophy pipeline
+
+ \textbf{(1) Imaging Data Pipeline:} 
+  The Imaging data Pipeline itself consists of mutliple subpipelines. 
+  The first subpipeline is the Astroline. The astroline uses vxWorks in order to initalize the processing sequence.
+  This happens by composing star cutouts and column quartiles collected from the CCD's mentioned before \cite{luptonSDSSImagingPipelines2001}
+
+  The second subpipline is the MT pipeline. the MT Pipeline processes the data collected from the Photometric Telescope. 
+  This data is used to calculate important parameters for the 2.5 m Telescope scans, such as extinction and zero-points \cite{luptonSDSSImagingPipelines2001}.
+
+  The third pipeline is the Serial Stamp Collecing (SSC) Pipeline. the SSC reorganizes the star cutouts collected from previous pipelines.
+  The SSC does this in order to prepare data for the upcoming pipelines \cite{luptonSDSSImagingPipelines2001}.
+
+  Next is the Astrometric Pipeline. The Astrometric pipeline processes the average location of stars using the data collected from the astroline and SSC pipelines. 
+  It then converts the pixel data from the images into celestial coordinates ($\alpha, \delta$) \cite{luptonSDSSImagingPipelines2001}.
+
+  After that is the Postage Stamp Pipeline (PSP). 
+  The PSP estimates the quality of the data collected by calculating factors such as the flat field vectors, bias drift, and sky levels.
+
+  After all that is done, the data is fed into the Frames Pipeline. The Frames pipeline does a majority of the work, processing the data from all the previous pipelines and producing the complete datasets of images.
+  It does this by correcting the frames based on the data before and cataloging the images.
+
+  Lastly, the processed data is then ran through the Calibration pipeline. The Calibration pipeline takes data from the MT and Frames pipeline. The Calibration pipeline converts the counts into more measurable quantities such as flux.
+
+The SDSS imaging pipeline is composed of multiple connected pipelines that operate collaboratively to transform raw imaging data into structured datasets from which measurable physical quantities such as flux can be derived.
+
+  \subsubsection{Real-Time Processing:} 
+
+\subsubsection{Open Source Policies and Transparency:} 
+The SDSS collaboration states on its official SDSS-IV website \footnote{\url{https://www.sdss4.org/dr17/software/}} that all of its software be open source using the open source liscence BSD 3-Clause.
+However, the SDSS outlines practices for users who plan to use the SDSS software must abide by. One of the most important ones is the proper citation of software and websites that were used. 
+The SDSS4 emphasizes the importance of citing properly as it serves to acknowledge the hard work of the teams behind said projects.
+
+The SDSS also has implemented Digital Object Identifiers, commonly known as DOIs, into all software code. DOIs allow for software and data to be easily identified, which is important for ownership.
+The SDSS team also promotes transparency in coding by implementing Git and SVN in order to maintain a record of the development of the software. This not only makes the development transparent, but also helps users see the evolution of the software.
+
+Overall, the SDSS has demonstrated a strong commitment to making their data and software open source and transparent. This in turn helps the development of science, by ensuring that knowledge is accessible to those without sufficient financial resources. 
 \bibliography{references}
 
 \end{document}

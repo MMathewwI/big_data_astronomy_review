@@ -50,11 +50,20 @@ Jonas, J., \& {the MeerKAT Team}. 2018, in Proceedings of {{MeerKAT Science}}: {
 \bibitem[{Lesser(2015)}]{lesserSummaryChargeCoupledDevices2015}
 Lesser, M. 2015, Publications of the Astronomical Society of the Pacific, 127, 1097, \dodoi{10.1086/684054}
 
+\bibitem[{Lupton {et~al.}(2001)Lupton, Gunn, Ivezic, Knapp, Kent, \& Yasuda}]{luptonSDSSImagingPipelines2001}
+Lupton, R., Gunn, J.~E., Ivezic, Z., {et~al.} 2001, The {{SDSS Imaging Pipelines}},  arXiv, \dodoi{10.48550/arXiv.astro-ph/0101420}
+
+\bibitem[{Lupton {et~al.}(2007)Lupton, Ivezic, Gunn, Knapp, Strauss, \& Yasuda}]{luptonSDSSImagingPipelines2007}
+Lupton, R.~H., Ivezic, {\textasciicaron}., Gunn, J., {et~al.} 2007
+
 \bibitem[{Majewski {et~al.}(2017)Majewski, Schiavon, Frinchaboy, Prieto, Barkhouser, Bizyaev, Blank, Brunner, Burton, Carrera, Chojnowski, Cunha, Epstein, Fitzgerald, P{\'e}rez, Hearty, Henderson, Holtzman, Johnson, Lam, Lawler, Maseman, M{\'e}sz{\'a}ros, Nelson, Nguyen, Nidever, Pinsonneault, Shetrone, Smee, Smith, Stolberg, Skrutskie, Walker, Wilson, Zasowski, Anders, Basu, Beland, Blanton, Bovy, Brownstein, Carlberg, Chaplin, Chiappini, Eisenstein, Elsworth, Feuillet, Fleming, {Galbraith-Frew}, Garc{\'i}a, {Garc{\'i}a-Hern{\'a}ndez}, Gillespie, Girardi, Gunn, Hasselquist, Hayden, Hekker, Ivans, Kinemuchi, Klaene, Mahadevan, Mathur, Mosser, Muna, Munn, Nichol, O'Connell, Parejko, Robin, {Rocha-Pinto}, Schultheis, Serenelli, Shane, Aguirre, Sobeck, Thompson, Troup, Weinberg, \& Zamora}]{majewskiApachePointObservatory2017}
 Majewski, S.~R., Schiavon, R.~P., Frinchaboy, P.~M., {et~al.} 2017, The Astronomical Journal, 154, 94, \dodoi{10.3847/1538-3881/aa784d}
 
 \bibitem[{Moore(2006)}]{mooreCrammingMoreComponents2006}
 Moore, G.~E. 2006, IEEE Solid-State Circuits Society Newsletter, 11, 33, \dodoi{10.1109/N-SSC.2006.4785860}
+
+\bibitem[{Richards(2020)}]{richardsWhatVignetting2020}
+Richards, S. 2020, What Is Vignetting?
 
 \bibitem[{Woudt {et~al.}(2018)Woudt, Fender, Corbel, Coriat, Daigne, Falcke, Girard, Heywood, Horesh, Horrell, Jonker, Joseph, Kamble, Knigge, K{\"o}rding, Kotze, Kouveliotou, Lynch, Maccarone, Meintjes, Migliari, Murphy, Nagayama, Nelemans, Nicholson, O'Brien, Oodendaal, Oozeer, Osborne, {Perez-Torres}, Ratcliffe, Ribeiro, Rol, Rushton, Scaife, Schurch, Sivakoff, Staley, Steeghs, Stewart, Swinbank, Vergani, Warner, Wiersema, Armstrong, Groot, McBride, {Miller-Jones}, Mooley, Stappers, Wijers, Bietenholz, Blyth, B{\"o}ttcher, Buckley, Charles, Chomiuk, Coppejans, De~Blok, Van Der~Heyden, Van Der~Horst, \& Van~Soelen}]{woudtThunderKATMeerKATLarge2018}
 Woudt, P.~A., Fender, R., Corbel, S., {et~al.} 2018, in Proceedings of {{MeerKAT Science}}: {{On}} the {{Pathway}} to the {{SKA}} --- {{PoS}}({{MeerKAT2016}}) (Stellenbosch, South Africa: Sissa Medialab), 013, \dodoi{10.22323/1.277.0013}

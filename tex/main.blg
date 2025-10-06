@@ -4,44 +4,46 @@ The top-level auxiliary file: main.aux
 The style file: aasjournal.bst
 Database file #1: references.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 18 entries,
+Warning--empty journal in luptonSDSSImagingPipelines2007
+You've used 21 entries,
             3168 wiz_defined-function locations,
-            789 strings with 27071 characters,
-and the built_in function-call counts, 19697 in all, are:
-= -- 649
-> -- 3282
-< -- 5
-+ -- 1088
-- -- 1108
-* -- 2527
-:= -- 4169
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 81
-chr.to.int$ -- 17
-cite$ -- 18
-duplicate$ -- 321
-empty$ -- 517
-format.name$ -- 1131
-if$ -- 3433
+            806 strings with 27619 characters,
+and the built_in function-call counts, 20982 in all, are:
+= -- 755
+> -- 3390
+< -- 6
++ -- 1126
+- -- 1149
+* -- 2636
+:= -- 4417
+add.period$ -- 21
+call.type$ -- 21
+change.case$ -- 103
+chr.to.int$ -- 20
+cite$ -- 22
+duplicate$ -- 366
+empty$ -- 591
+format.name$ -- 1173
+if$ -- 3679
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 62
-num.names$ -- 72
-pop$ -- 96
+missing$ -- 15
+newline$ -- 71
+num.names$ -- 84
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 103
 quote$ -- 0
-skip$ -- 267
+skip$ -- 301
 stack$ -- 0
-substring$ -- 274
+substring$ -- 295
 swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 0
-while$ -- 60
+type$ -- 189
+warning$ -- 1
+while$ -- 69
 width$ -- 0
-write$ -- 204
+write$ -- 232
+(There was 1 warning)
