@@ -1,0 +1,62 @@
+#Import relevant libraries/functions
+from astroquery.sdss import SDSS
+from astropy import coordinates as coords
+import astropy.units as u
+import matplotlib.pyplot as plt
+import numpy as np
+
+#Initalize Right Ascension and Declination
+ra = 20
+dec = -10
+
+#Convert ra and dec into a SkyCoord Object
+coord = coords.SkyCoord(ra, dec, unit='deg', frame = 'icrs')
+
+#Query the SDSS System to find object given coordinates in a radius of 0.01 degrees
+result = SDSS.query_region(coord,  radius=0.01*u.deg, spectro=True)
+print(result)
+#Retrieve the Image from found object, make into a FITS File
+image = SDSS.get_images(matches=result, band=['u', 'g', 'r', 'i', 'z'])
+
+
+#Retrieve hdulist from FITS file
+hdulist = image[0]
+
+#Retrieve the image data from the hdulist 
+imageData = hdulist[0].data
+
+#Log the image data in order to get rid of background
+imageDataLog = np.log10(imageData) + 1e-8
+
+#Save the header
+header = hdulist[0].header
+
+
+#Obtain the relevant headers
+
+#Retrieve pixel scale numbers, divided amongst two parts for ra and dec 
+CD1_1 = header['CD1_1']
+CD1_2 = header['CD1_2']
+CD2_1 = header['CD2_1']
+CD2_2 = header['CD2_2']
+
+#Width of image in pixels 
+keyWordNAXIS1 = header['NAXIS1'] #[pixels]
+
+#Height of image in pixels [pixels]
+keyWordNAXIS2 = header['NAXIS2'] #[pixels]
+
+#Normalize the pixel scale, then multiply by 3600 to convert units
+CDELT1ArcSec = np.linalg.norm([CD1_1,CD1_2]) * 3600 #[arcsec/pixels]
+CDELT2ArcSec = np.linalg.norm([CD2_1,CD2_2]) * 3600 #[arcsec/pixels]
+
+#Set up the image
+plt.xlabel("Right Ascension (arcsec)")
+plt.ylabel("Declination (arcsec)")
+plt.title('SDSS Logarithmic Optical Image')
+vmin2 = np.percentile(imageDataLog, 85) 
+vmax2 = np.percentile(imageDataLog, 98)
+plt.imshow(imageDataLog, cmap='viridis', extent = (0, CDELT1ArcSec * keyWordNAXIS1, 0, CDELT2ArcSec * keyWordNAXIS2), vmin = vmin2, vmax = vmax2)
+plt.colorbar()
+
+plt.show()

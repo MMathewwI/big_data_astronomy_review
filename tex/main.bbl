@@ -5,6 +5,12 @@
 \providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
+\bibitem[{MIG(????)}]{MIGHTEESurvey}
+ ????, The {{MIGHTEE}} Survey, https://www.mighteesurvey.org/home
+
+\bibitem[{SKA(????)}]{SKATelescopeSpecifications}
+ ????, {{SKA Telescope Specifications}}, https://www.skao.int/en/science-users/118/ska-telescope-specifications
+
 \bibitem[{Blyth {et~al.}(2018)Blyth, Baker, Holwerda, Bouchard, Catinella, Chemin, Cunnama, Dav{\'e}, Faltenbacher, February, Fern{\'a}ndez, Gawiser, Heywood, Kere{\v s}, Kl{\"o}ckner, Lah, Lochner, Maddox, Makhathini, Moodley, Morganti, Obreschkow, Oh, Pisano, Popping, Popping, Ravindranath, Schinnerer, Sheth, Skelton, Smith, Srianand, {Staveley-Smith}, Vaccari, Vaisanen, Walter, Rawlings, Bassett, Bershady, Briggs, Crawford, Cress, Darling, Deane, De~Blok, Elson, Frank, Henning, Hess, Hughes, Jarvis, Kannappan, Katz, {Kraan-Korteweg}, Lehnert, Leroy, Meurer, Meyer, Pisano, Schr{\"o}der, Smirnov, Somerville, Stewart, Van Der~Heyden, Verheijen, Wilcots, Williams, Woudt, Wu, Zwaan, Zwart, Oosterloo, \& Van~Drie}]{blythLADUMALookingDistant2018}
 Blyth, S., Baker, A.~J., Holwerda, B., {et~al.} 2018, in Proceedings of {{MeerKAT Science}}: {{On}} the {{Pathway}} to the {{SKA}} --- {{PoS}}({{MeerKAT2016}}) (Stellenbosch, South Africa: Sissa Medialab), 004, \dodoi{10.22323/1.277.0004}
 
@@ -47,6 +53,9 @@ Ivezi{\'c}, {\v Z}., Kahn, S.~M., Tyson, J.~A., {et~al.} 2019, The Astrophysical
 \bibitem[{Jonas \& {the MeerKAT Team}(2018)}]{jonasMeerKATRadioTelescope2018}
 Jonas, J., \& {the MeerKAT Team}. 2018, in Proceedings of {{MeerKAT Science}}: {{On}} the {{Pathway}} to the {{SKA}} --- {{PoS}}({{MeerKAT2016}}) (Stellenbosch, South Africa: Sissa Medialab), 001, \dodoi{10.22323/1.277.0001}
 
+\bibitem[{Juric {et~al.}(2017)Juric, Kantor, Lim, Lupton, {Dubois-Felsmann}, Jenness, Axelrod, Aleksic, Allsman, AlSayyad, Alt, Armstrong, Basney, Becker, Becla, Biswas, Bosch, Boutigny, Kind, Ciardi, Connolly, Daniel, Daues, Economou, Chiang, Fausti, {Fisher-Levine}, Freemon, Gris, Hernandez, Hoblitt, Ivezic, Jammes, Jevremovic, Jones, Kalmbach, Kasliwal, Krughoff, Lurie, Lust, MacArthur, Melchior, Moeyens, Nidever, Owen, Parejko, Peterson, Petravick, Pietrowicz, Price, Reiss, Shaw, Sick, Slater, Strauss, Sullivan, Swinbank, Dyk, Vujc{\textasciicaron}ic, Withers, \& Yoachim}]{juricLSSTDataManagement2017}
+Juric, M., Kantor, J., Lim, K.-T., {et~al.} 2017
+
 \bibitem[{Lesser(2015)}]{lesserSummaryChargeCoupledDevices2015}
 Lesser, M. 2015, Publications of the Astronomical Society of the Pacific, 127, 1097, \dodoi{10.1086/684054}
 
@@ -61,6 +70,9 @@ Majewski, S.~R., Schiavon, R.~P., Frinchaboy, P.~M., {et~al.} 2017, The Astronom
 
 \bibitem[{Moore(2006)}]{mooreCrammingMoreComponents2006}
 Moore, G.~E. 2006, IEEE Solid-State Circuits Society Newsletter, 11, 33, \dodoi{10.1109/N-SSC.2006.4785860}
+
+\bibitem[{{NSF-DOE Vera C. Rubin Observatory}(2025)}]{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}
+{NSF-DOE Vera C. Rubin Observatory}. 2025, {{PSTN-019}}: {{The LSST Science Pipelines Software}}: {{Optical Survey Pipeline Reduction}} and {{Analysis Environment}},  NSF-DOE Vera C. Rubin Observatory, \dodoi{10.71929/RUBIN/2570545}
 
 \bibitem[{Richards(2020)}]{richardsWhatVignetting2020}
 Richards, S. 2020, What Is Vignetting?
