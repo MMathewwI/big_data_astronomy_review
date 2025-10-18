@@ -1,11 +1,12 @@
 \documentclass[preprint,linenumbers, longauthor]{aastex631}
+\bibliographystyle{aasjournal}
 \usepackage{graphicx}
 \usepackage{appendix}
 \usepackage{listings} 
 \usepackage{xcolor}
 \begin{document}
 
-\title{The New Age of Big Data In Astronomy: A Review of on the SKA \& Rubin/LSST}
+\title{The New Age of Big Data In Astronomy: A Review of the SKA \& Rubin}
 \author{Mathew Icho}
 \affiliation{The University of Illinois at Urbana-Champaign}
 
@@ -13,7 +14,6 @@
 I'm making my abstract my to do list for now
 
 \textbf{NOTE: I fixed the things you told me to fix, I added a new figure to sdss section, I added lsst section}
-
 
 \textbf{1. Fix the SDSS part based on provided notes, also make real-time processing section}
 
@@ -41,7 +41,7 @@ The first and most primitive paradigm, as described by \cite{heyFourthParadigmDa
 Empirical evidence refers to data collected through traditional means, such as direct observation or experimentation. 
 The primary purpose of empirical evidence is to identify patterns that allow scientists to develop a fundamental understanding of the natural world. 
 Throughout much of human history, empirical evidence has dominated knowledge generation. 
-An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe collected and cataloged data on the position of astronomical bodies using naked-eye observations. 
+An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe collected and cataloged data on the position of astronomical bodies using naked-eye observations. Tycho Brahe's catalogue was accurate to only around 1' precision and took decades to acquire \citep{verbuntThreeEditionsStar2010}.
 However, empirical evidence can be compromised by human error, the precision of the instruments, and, most importantly, the relatively slow pace of data acquisition compared to subsequent paradigms.
 
 The second paradigm is analytical evidence. Analytical evidence is obtained by constructing mathematical formulas and theoretical frameworks based on empirical data \cite{heyFourthParadigmDataIntensive2009}. 
@@ -71,7 +71,7 @@ Moore's law predicts that integrated circuit chip density doubles approximately 
 Moore's law can be seen in many data-intensive fields, including astronomy.
 It explains both the recent development of big data in astronomy, and predicts future challenges.
 
-This paper therefore seeks to review the rise of big data in astronomy and the technical and scientific issues surrounding it by examining four case studies: MeerKAT \footnote{https://www.skao.int/en}, The Sloan Digital Sky Survey (SDSS) \footnote{https://www.sdss.org/}, The Legacy Survey of Space and Time (LSST) \footnote{https://www.lsst.org/}, and The Square Kilometre Array (SKA) \footnote{https://www.skao.int/en}. 
+This paper therefore seeks to review the rise of big data in astronomy and the technical and scientific issues surrounding it by examining four case studies: MeerKAT \footnote{\url{https://www.skao.int/en}}, The Sloan Digital Sky Survey (SDSS) \footnote{\url{https://www.sdss.org/}}, The Legacy Survey of Space and Time (LSST) \footnote{\url{https://www.lsst.org/}}, and The Square Kilometre Array (SKA) \footnote{\url{https://www.skao.int/en}}. 
 These facilities represent the scope of contemporary astronomical data, the methods of its acquisition, their relative successes, the ongoing challenges, and the solutions currently in use.
 
 \subsection{An Overview of The Four Surveys}
@@ -83,40 +83,40 @@ The first of the three is The Sloan Foundation 2.5m Telescope.
 The Telescope is stationed at the Apache Point Observatory in New Mexico, where it observes the sky in the northern hemisphere. 
 It is able to observe a 3$^\circ$ field of view by use of two corrector lenses \citep{gunn25TelescopeSloan2006}.
 
-The SDSS also uses the Irénée du Pont telescope at Las Campanas Observatory \footnote{https://www.lco.cl/irenee-du-pont-telescope/}. This telescope is stationed in Chile, where it observes the southern hemisphere instead. 
+The SDSS also uses the Irénée du Pont telescope at Las Campanas Observatory \footnote{\url{https://www.lco.cl/irenee-du-pont-telescope/}}. This telescope is stationed in Chile, where it observes the southern hemisphere instead. 
 Similar to the foundational telescope at Apache Point, this telescope has a 2.1$^\circ$ field of view but only uses one corrector lens \cite{bowenOpticalDesign40in1973}.
 
-The third telescope is the NMSU 1-meter Telescope \footnote{https://newapo.apo.nmsu.edu/}. The NMSU telescope is stationed at the Apache Point Observatory alongside the foundational telescope. 
+The third telescope is the NMSU 1-meter Telescope \footnote{\url{https://newapo.apo.nmsu.edu/}}. The NMSU telescope is stationed at the Apache Point Observatory alongside the foundational telescope. 
 The NMSU telescope is designed to observe bright stars that are too bright for the aforementioned two telescopes to observe \citep{majewskiApachePointObservatory2017}. 
 
-the SDSS is made up of multiple subsurveys. The eBoss survey \footnote{https://www.sdss4.org/surveys/eboss/}, a continuation of BOSS, uses spectrographs to observe light in a wavelength range of 3600-10,400~\AA \space \citep{dawsonSDSSIVEXTENDEDBARYON2016}.
+the SDSS is made up of multiple subsurveys. The eBoss survey \footnote{\url{https://www.sdss4.org/surveys/eboss/}}, a continuation of BOSS, uses spectrographs to observe light in a wavelength range of 3600-10,400~\AA \space \citep{dawsonSDSSIVEXTENDEDBARYON2016}.
 An additional subsurvey is APOGEE-2, a continuation of APOGEE. It uses spectrographs similar to eBOSS, but APOGEE-2 collected near-infrared spectra \citep{majewskiApachePointObservatory2017}. 
-MaNGA \footnote{https://www.sdss4.org/surveys/manga/} is a subsurvey that collects integral field unit spectra of 10,000 nearby galaxies \citep{bundyOVERVIEWSDSSIVMaNGA2014}.
-MARVELS \footnote{https://www.sdss4.org/surveys/marvels/} is another SDSS subsurvey, it was built specifically to obtain radial velocity measurements of stars with high-precision in hopes of finding exoplanets \citep{bundyOVERVIEWSDSSIVMaNGA2014a}.
+MaNGA \footnote{\url{https://www.sdss4.org/surveys/manga/}} is a subsurvey that collects integral field unit spectra of 10,000 nearby galaxies \citep{bundyOVERVIEWSDSSIVMaNGA2014}.
+MARVELS \footnote{\url{https://www.sdss4.org/surveys/marvels/}} is another SDSS subsurvey, it was built specifically to obtain radial velocity measurements of stars with high-precision in hopes of finding exoplanets \citep{bundyOVERVIEWSDSSIVMaNGA2014a}.
 
 
-The MeerKAT \footnote{https://www.sarao.ac.za/science/meerkat/} is an important precursor telescope to the SKA \citep{jonasMeerKATRadioTelescope2018}
+The MeerKAT \footnote{\url{https://www.sarao.ac.za/science/meerkat/}} is an important precursor telescope to the SKA \citep{jonasMeerKATRadioTelescope2018}
 MeerKAT became fully operational in 2018 in the Northern Cape Province of South Africa.
-MeerKAT comprises 64 antennas distributed over a radius of approximately 600 miles \cite{goedhartMeerKATSpecifications2025}. These antennas operate across frequency bands ranging from 350 MHz to 3500 MHz \citep{goedhartMeerKATSpecifications2025}.
+MeerKAT comprises 64 antennas distributed over a radius of approximately 600 miles \citep{goedhartMeerKATSpecifications2025}. These antennas operate across frequency bands ranging from 350 MHz to 3500 MHz \citep{goedhartMeerKATSpecifications2025}.
 
 MeerKAT has conducted and continues to conduct ten major survey projects \citep{jonasMeerKATRadioTelescope2018}. For conciseness, this discussion will focus on five of these surveys.
-One is the LADUMA \footnote{https://science.uct.ac.za/laduma} survey.
+One is the LADUMA \footnote{\url{https://science.uct.ac.za/laduma}} survey.
 The objective of the LADUMA survey is to use HI obversations to research galaxy evolution over approximately 9.8 billion years \citep{blythLADUMALookingDistant2018}. 
 LADUMA has used MeerKAT's Phase 1 receivers, which cover 0.9-1.75 GHz. It later transitioned to longer observations in Phase 4, which cover the 0.58-2.5 GHz band \citep{blythLADUMALookingDistant2018}.
 Although the LADUMA survey is still ongoing, a portion of the data has already been released and will be discussed in the Methods section.
 
-The MeerKAT absorbtion line survey \footnote{https://mals.iucaa.in/} (MALS) is a survey of HI and OH absorbers at a redshift of $z < 0.4$ and $z < 0.7$. 
+The MeerKAT absorbtion line survey \footnote{\url{https://mals.iucaa.in/}} (MALS) is a survey of HI and OH absorbers at a redshift of $z < 0.4$ and $z < 0.7$. 
 HI is a descriptive tracer of the cold neutral medium in a galaxy \citep{guptaBlindOHAbsorption2021}. 
 The cold neutral medium contains the physical conditions of the interstellar medium of each galaxy. This, in turn, allows scientists to estimate star formation rate in the galaxy \citep{guptaBlindOHAbsorption2021}.
 
-Another survey, ThunderKAT \footnote{https://www.physics.ox.ac.uk/research/group/meerkat}, aims to find, identify and understand high-energy radio transients, usually grouped with observations at similar wavelengths.
+Another survey, ThunderKAT \footnote{\url{https://www.physics.ox.ac.uk/research/group/meerkat}}, aims to find, identify and understand high-energy radio transients, usually grouped with observations at similar wavelengths.
 Examples include supernovae, microquasars, and similar events \citep{woudtThunderKATMeerKATLarge2018}.
 
-Another notable MeerKAT survey is MHONGOOSE \footnote{https://mhongoose.astron.nl/}. This survey aims to catalogue the properties of HI gas using 30 nearby star-forming spiral and dwarf galaxies. 
-MHONGOOSE is remarkable for its higher sensitivity compared to previous surveys such as HALOGAS \footnote{https://www.astron.nl/halogas/} and THINGS \footnote{https://www2.mpia-hd.mpg.de/THINGS/Overview.html} \citep{deblokMHONGOOSEMeerKATNearby2024}. 
+Another notable MeerKAT survey is MHONGOOSE \footnote{\url{https://mhongoose.astron.nl/}}. This survey aims to catalogue the properties of HI gas using 30 nearby star-forming spiral and dwarf galaxies. 
+MHONGOOSE is remarkable for its higher sensitivity compared to previous surveys such as HALOGAS \footnote{\url{https://www.astron.nl/halogas/}} and THINGS \footnote{\url{https://www2.mpia-hd.mpg.de/THINGS/Overview.html}} \citep{deblokMHONGOOSEMeerKATNearby2024}. 
 This sensitivity is crucial for investigating how low-column-density gas influences the cosmic web and galactic accretion processes \citep{deblokMHONGOOSEMeerKATNearby2024}.
 
-The final MeerKAT survey considered here is MIGHTEE \footnote{https://www.mighteesurvey.org/home}. MIGHTEE spans 900-1670 MHz, achieving a resolution of approximately 6 arcseconds. MIGHTEE seeks to study the evolution of active galatic nuclei, neutral hydrogen, and the properties of cosmic magnetic fields \citep{MIGHTEESurvey}.
+The final MeerKAT survey considered here is MIGHTEE \footnote{\url{https://www.mighteesurvey.org/home}}. MIGHTEE spans 900-1670 MHz, achieving a resolution of approximately 6 arcseconds. MIGHTEE seeks to study the evolution of active galatic nuclei, neutral hydrogen, and the properties of cosmic magnetic fields \citep{MIGHTEESurvey}.
 
 \begin{figure}[h!]
   \centering
@@ -235,33 +235,38 @@ Objects can, however, be observed as many times as requested.
  %\textbf{NOTE: This is gonna super complex, Study this hard. Its only surface level rn } 
 The SDSS processes its data through an innovative acquisition system that records and organizes observations in real time while maintaining strict quality control \cite{gunn25TelescopeSloan2006}. 
 This system ensures that data are processed and stored efficiently without any loss of precision. \cite{gunn25TelescopeSloan2006}. 
-The data pipeline of the SDSS can be described by two different fields of data, the imaging pipeline and the spectroscophy pipeline
+The data pipeline of the SDSS can be described by two different fields of data, the imaging pipeline and the spectroscopy pipeline
 
  \textbf{(1) Imaging Data Pipeline:} 
-  The Imaging data Pipeline itself consists of mutliple subpipelines. 
+  The Imaging data Pipeline itself consists of multiple subpipelines. 
   The first subpipeline is the Astroline. The astroline uses vxWorks in order to initalize the processing sequence.
-  This happens by composing star cutouts and column quartiles collected from the CCD's mentioned before \cite{luptonSDSSImagingPipelines2001}
+  This happens by composing star cutouts and column quartiles collected from the CCD's mentioned before \citep{luptonSDSSImagingPipelines2001}
 
   The second subpipline is the MT pipeline. the MT Pipeline processes the data collected from the Photometric Telescope. 
-  This data is used to calculate important parameters for the 2.5 m Telescope scans, such as extinction and zero-points \cite{luptonSDSSImagingPipelines2001}.
+  This data is used to calculate important parameters for the 2.5 m Telescope scans, such as extinction and zero-points \citep{luptonSDSSImagingPipelines2001}.
 
   The third pipeline is the Serial Stamp Collecing (SSC) Pipeline. the SSC reorganizes the star cutouts collected from previous pipelines.
-  The SSC does this in order to prepare data for the upcoming pipelines \cite{luptonSDSSImagingPipelines2001}.
+  The SSC does this in order to prepare data for the upcoming pipelines \citep{luptonSDSSImagingPipelines2001}.
 
   Next is the Astrometric Pipeline. The Astrometric pipeline processes the average location of stars using the data collected from the astroline and SSC pipelines. 
-  It then converts the pixel data from the images into celestial coordinates ($\alpha, \delta$) \cite{luptonSDSSImagingPipelines2001}.
+  It then converts the pixel data from the images into celestial coordinates ($\alpha, \delta$) \citep{luptonSDSSImagingPipelines2001}.
 
   After that is the Postage Stamp Pipeline (PSP). 
-  The PSP estimates the quality of the data collected by calculating factors such as the flat field vectors, bias drift, and sky levels \cite{luptonSDSSImagingPipelines2001}.
+  The PSP estimates the quality of the data collected by calculating factors such as the flat field vectors, bias drift, and sky levels \citep{luptonSDSSImagingPipelines2001}.
 
   After all that is done, the data is fed into the Frames Pipeline. The Frames pipeline does a majority of the work, processing the data from all the previous pipelines and producing the complete datasets of images.
-  It does this by correcting the frames based on the data before and cataloging the images \cite{luptonSDSSImagingPipelines2001}.
+  It does this by correcting the frames based on the data before and cataloging the images \citep{luptonSDSSImagingPipelines2001}.
 
-  Lastly, the processed data is then ran through the Calibration pipeline. The Calibration pipeline takes data from the MT and Frames pipeline. The Calibration pipeline converts the counts into more measurable quantities such as flux \cite{luptonSDSSImagingPipelines2001}.
+  Lastly, the processed data is then ran through the Calibration pipeline. The Calibration pipeline takes data from the MT and Frames pipeline. The Calibration pipeline converts the counts into more measurable quantities such as flux \citep{luptonSDSSImagingPipelines2001}.
 
 The SDSS imaging pipeline is composed of multiple connected pipelines that operate collaboratively to transform raw imaging data into structured datasets from which measurable physical quantities such as flux can be derived.
 
+ \textbf{(2) Spectroscopy Data Pipeline:} 
+ 
+
+
 \paragraph{Real-Time Processing} 
+
 
 \subsubsection{The Rubin/Large Synoptic Survey Telescope (LSST)}
 \paragraph{Data Collection and Storage}
@@ -293,11 +298,64 @@ This task is combined with the deblending of collected images allows for the LSS
 
 \paragraph{Real-Time Processing}
 
-\paragraph{Open Source Policies and Transparency}
-
-
 \subsection{The Radio Big Data Pipeline}
+
 \subsubsection{The MeerKAT}
+
+\paragraph{Data Processing}
+
+The MeerKAT data processing pipeline is split into three parts, the calibration pipeline, the continuum pipeline, and the spectral pipeline \citep{ratcliffeSDPPipelinesOverview2021}.
+
+ \textbf{(2) The Continuum Pipeline:} 
+The second pipeline is the continuum pipeline. This pipeline aims to produce continuum images using the orbit software package \citep{ratcliffeSDPPipelinesOverview2021, cottonObitDevelopmentEnvironment2008}.
+The orbit package which interfaces UV data. It does this by using the \texttt{MFImage} task, which does wide-band, wide-field imaging \citep{ratcliffeSDPPipelinesOverview2021,cottonAttemptAdaptSaultWieringa2010}.
+Once the data is read, it is split into scans, which are then averaged and combined into a dataset. 
+
+ \begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{MeerKAT_Image.png}
+  \caption{An example UHF continuum thumbnail image produced automatically by the pipeline is shown above, \citep{ratcliffeSDPPipelinesOverview2021}}
+  \label{fig:Meerkat_Image}
+\end{figure}
+
+This dataset is then split into 8 107 MHz intermediate frequencies \citep{ratcliffeSDPPipelinesOverview2021}.
+The UV data then stores headers of \texttt{ntimes, nbaselines, nchannels, npolarisation} \citep{ratcliffeSDPPipelinesOverview2021}.
+Given the Meerkat's design of 48 antennas, short baselines dominate. This causes an inflation in data volume \citep{ratcliffeSDPPipelinesOverview2021}. In order to circumvent this, a baseline dependent averaging step is applied \citep{ratcliffeSDPPipelinesOverview2021}.
+Time averaging the data with respect to the baseline before merging them into a dataset. This step reduces the data volume by about 3-4 times with a minimal loss of 1% of the amplitude \citep{ratcliffeSDPPipelinesOverview2021}.
+
+The aforementioneed \texttt{MFImage} task uses joint frequency deconvolution to handle wide-band effects in wide-band images \citep{ratcliffeSDPPipelinesOverview2021}. 
+Normally, Meerkat uses around 140 circular facets with a size of around 6 arcminutes which cover 1 degree from the phase center \citep{ratcliffeSDPPipelinesOverview2021}.
+Additionally, there are facets with around 1 degree that  use the SUMSS or NVSS catalogue for a radius of 2.5 from the center of the phase \cite{ratcliffeSDPPipelinesOverview2021}.
+These 1 degree facets are used for phenomena that are ancipiated to have a flux density greater than 5 mJy \cite{ratcliffeSDPPipelinesOverview2021}.
+Due to the fact that these facets deal with wide-band images, they also deal with wide-band imaging effects. These effects are bypassed by splitting the frequency band used into 10 components \citep{ratcliffeSDPPipelinesOverview2021}. 
+When the joint frequency deconvolution is initiated, the brightest light sources in the dataset are found and subtracted from the slices of data individually. This is called the CLEAN algorithm \citep{ratcliffeSDPPipelinesOverview2021}.
+
+Self-calibration is then performed in two rounds in order to transform data. The first round consists of using the CLEAN algorithm with a spectral density of 1 mJy. This yields approximately 1000 CLEAN components \citep{ratcliffeSDPPipelinesOverview2021}. 
+The data is then self calibrated once more, using a CLEAN algorithm with a spectral density of 100 $\mu$Jy. The second round yields approximately 10000 CLEAN components \citep{ratcliffeSDPPipelinesOverview2021}.
+After this process, the data is imaged and used to create the continuum images.
+Lastly, the self calibrated data is converted into AIPS format, which consists of tables with headers such as UV data, polarisation, etc \citep{ratcliffeSDPPipelinesOverview2021}. The data is then converted into numpy arrays for each timestamp with shape (nif, npol, nantennas) \citep{ratcliffeSDPPipelinesOverview2021}. 
+The sky model, made up of the CLEAN components, is stored in AIPS CC format. The flux density of all the 10 components of the frequency are summated \citep{ratcliffeSDPPipelinesOverview2021}. The merged flux density is then fitted with a second degree polynomial to measure frequency and is used to subtract from the image \citep{ratcliffeSDPPipelinesOverview2021}.
+Finally, the fully processed images are converted into FITS and PNG files and archived \citep{ratcliffeSDPPipelinesOverview2021}.
+
+ \textbf{(3) The Spectral Pipeline:} 
+The purpose of the spectral pipeline is to speed up image creation while keeping control of quality \citep{ratcliffeSDPPipelinesOverview2021}. 
+The issue with the imaging data, at this point is that they're independent of eachother, which causes issues with accessing data when trying to run said images \citep{ratcliffeSDPPipelinesOverview2021}. The raw data, also known as visibilities. are recieved in time-major order, but this data structure must be transposed in order for the data to be in channel-major order \citep{ratcliffeSDPPipelinesOverview2021}.
+In order to solve this issue, a visibility writer is used. The writer stores the visibilities on a Ceph cluster with chunks each across 64 channels \citep{ratcliffeSDPPipelinesOverview2021}. This choice in the chunk size is not optimized, but it does avoid issues with RAM and memory allocation \citep{ratcliffeSDPPipelinesOverview2021}.
+
+The chunk system only partially implements the solution of transposing the data. The solution is complete after another series of events are done \citep{ratcliffeSDPPipelinesOverview2021}. The visibilities in each chunk are ordered by channel, W slice, and baseline. This allows for both the accessibility of the data to improve, and it inherently stores measurements such as UVW coordinateas and parallatic angles \citep{ratcliffeSDPPipelinesOverview2021}.
+While all that is occuring, conservative baseline-depedent averaging is also applied to the visibilities \citep{ratcliffeSDPPipelinesOverview2021}. The coordinates of every visibility are solved for, then visibilities with matching coordinates are merged, which is the last of the preprocessing of the visiblities \citep{ratcliffeSDPPipelinesOverview2021}.
+
+After all of that is done, By using CUDA, a parallel processing software, every channel is imaged separetly. The use of CUDA allows for the processing to speed up due to the usage of NVIDIA GPUs \citep{ratcliffeSDPPipelinesOverview2021}. 
+Lastly, the data follows a cycle as described in the figure below in order to be updated. 
+
+ \begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Meerkat_Spec_pipeline.png}
+  \caption{The cyclic algorithm for the Meerkat's spectrographic pipeline, \citep{ratcliffeSDPPipelinesOverview2021}}
+  \label{fig:Spec_pipeline}
+\end{figure}
+
+
 
 \subsubsection{The Square Kilometre Array (SKA)}
 
@@ -313,6 +371,7 @@ The SDSS collaboration states on its official SDSS-IV website \footnote{\url{htt
 However, the SDSS outlines practices for users who plan to use the SDSS software must abide by. One of the most important ones is the proper citation of software and websites that were used. 
 The SDSS4 emphasizes the importance of citing properly as it serves to acknowledge the hard work of the teams behind said projects.
 
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{SDSS_Optical_Image.png}
@@ -323,14 +382,17 @@ The SDSS4 emphasizes the importance of citing properly as it serves to acknowled
 The SDSS also has implemented Digital Object Identifiers, commonly known as DOIs, into all software code. DOIs allow for software and data to be easily identified, which is important for ownership.
 The SDSS team also promotes transparency in coding by implementing Git and SVN in order to maintain a record of the development of the software. This not only makes the development transparent, but also helps users see the evolution of the software.
 
-Overall, the SDSS has demonstrated a strong commitment to making their data and software open source and transparent. This in turn helps the development of science, by ensuring that knowledge is accessible to those without sufficient financial resources. 
+Overall, the SDSS has demonstrated a strong commitment to making their data and software open source and transparent. This in turn helps the development of science, by ensuring that knowledge is accessible to all regardless of resources. 
 
 \subsubsection{The LSST Policy}
 Similar to the SDSS, the LSST has declared a commitment to having their software open source and their pipeline transparent.
 
 \subsubsection{The MeerKAT Policy}
 
+
 \subsubsection{The SKA Policy}
+
+
 
 \lstset{
     basicstyle=\ttfamily\small,
@@ -415,6 +477,7 @@ plt.imshow(imageDataLog, cmap='viridis', extent = (0, CDELT1ArcSec * keyWordNAXI
 plt.colorbar()
 
 plt.show()
+
 \end{lstlisting}
 
 \end{appendices}
@@ -423,4 +486,5 @@ plt.show()
 \bibliography{references}
 
 \end{document}
+
 

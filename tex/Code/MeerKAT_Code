@@ -1,0 +1,8 @@
+import katdal
+from astropy.time import Time
+from matplotlib.dates import DateFormatter
+
+#get the link to the rdb file from the archive
+link = 'https://archive-gw-1.kat.ac.za/1639440394/1639440394_sdp_l0.full.rdb?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJpc3MiOiJrYXQtYXJjaGl2ZS5rYXQuYWMuemEiLCJhdWQiOiJhcmNoaXZlLWd3LTEua2F0LmFjLnphIiwiaWF0IjoxNjM5NTczNDQ0LCJwcmVmaXgiOlsiMTYzOTQ0MDM5NCJdLCJleHAiOjE2NDAxNzgyNDQsInN1YiI6InNoYXJtaWxhQHNhcmFvLmFjLnphIiwic2NvcGVzIjpbInJlYWQiXX0.H2yEdZY8BEJDAgMR2XyBf3r6IcHQ2E2hCmhaUmKJgqchy_okOxxNr5XLpHFTpNSv9iitvFQX40B1_ioLr1YvIQ'
+data = katdal.open(link)
+print(data)

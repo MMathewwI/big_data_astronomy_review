@@ -1,17 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1760318626.93148 "main.aux" "main.bbl" "main" 1760318777.89628 0
-  "./references.bib" 1760227529 71574 1ebb55a5293c83a69d59db42d7b3f7e9 ""
+["bibtex main"] 1760777667.1709 "main.aux" "main.bbl" "main" 1760777680.79079 0
+  "./references.bib" 1760750448 76000 3e04f77139503868b2c91c53797bdd8d ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1725840509 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "main.aux" 1760318776 19050 6119f0ce7afdcca1bc4f0f6c73c102f4 "pdflatex"
+  "main.aux" 1760777679 21066 0f31c8d95ecfec2843f384715caa1671 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1760318775.06224 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1760318777.89694 0
+["pdflatex"] 1760777667.75806 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1760777680.79135 0
+  "MeerKAT_Image.png" 1760775492 5335819 30b0c1a6a6a8f3aa8c35cbb8ca9f0a37 ""
+  "Meerkat_Spec_pipeline.png" 1760777455 55528 c8c0fc2e35ebc45ed78b59070bdc64bf ""
   "SDSS_Optical_Image.png" 1760317796 270094 82e09b809c1585ede94f651b6de058d6 ""
   "SKA_Graph.png" 1760201177 155801 20f213a6c21cda33d13658fe67087eb8 ""
   "aastex631.cls" 1758742918 239479 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1760318774 33017 2b580ab5f4c72e9541516aaee1779932 ""
+  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1760777652 39987 5573b01790facdd8daf730a6849e79a0 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1725841972 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725843524 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1725844058 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -139,11 +141,11 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725849800 8239325 50797afa5a41a53037c3ab6978671a7e ""
   "c:/texlive/2024/texmf.cnf" 1725849597 713 e69b156964470283e0530f5060668171 ""
   "gunn_table_5.png" 1759645037 162226 1175916ccbb900e8e6584d84db691d6b ""
-  "main.aux" 1760318776 19050 6119f0ce7afdcca1bc4f0f6c73c102f4 "pdflatex"
-  "main.bbl" 1760318627 14794 9b11b34123b2c382d46d579365b89661 "bibtex main"
-  "main.out" 1760318776 3631 b549c4d0a2b670dfd1eb97cda58255eb "pdflatex"
-  "main.tex" 1760318774 33017 2b580ab5f4c72e9541516aaee1779932 ""
-  "main.toc" 1760318776 2328 8550d08b396af901a4a2d07e5d713d43 "pdflatex"
+  "main.aux" 1760777679 21066 0f31c8d95ecfec2843f384715caa1671 "pdflatex"
+  "main.bbl" 1760777667 15460 3902fba42d559a12a6f4b733656519be "bibtex main"
+  "main.out" 1760777679 3631 b549c4d0a2b670dfd1eb97cda58255eb "pdflatex"
+  "main.tex" 1760777652 39987 5573b01790facdd8daf730a6849e79a0 ""
+  "main.toc" 1760777679 2306 f749c2e8aea289201b7667feefc244f9 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

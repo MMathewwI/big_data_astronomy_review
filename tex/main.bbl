@@ -23,6 +23,12 @@ Bundy, K., Bershady, M.~A., Law, D.~R., {et~al.} 2014{\natexlab{a}}, The Astroph
 \bibitem[{Bundy {et~al.}(2014{\natexlab{b}})Bundy, Bershady, Law, Yan, Drory, MacDonald, Wake, Cherinka, {S{\'a}nchez-Gallego}, Weijmans, Thomas, Tremonti, Masters, Coccato, {Diamond-Stanic}, {Arag{\'o}n-Salamanca}, {Avila-Reese}, Badenes, {Falc{\'o}n-Barroso}, Belfiore, Bizyaev, Blanc, {Bland-Hawthorn}, Blanton, Brownstein, Byler, Cappellari, Conroy, Dutton, Emsellem, Etherington, Frinchaboy, Fu, Gunn, Harding, Johnston, Kauffmann, Kinemuchi, Klaene, Knapen, Leauthaud, Li, Lin, Maiolino, Malanushenko, Malanushenko, Mao, Maraston, McDermid, Merrifield, Nichol, Oravetz, Pan, Parejko, Sanchez, Schlegel, Simmons, Steele, Steinmetz, Thanjavur, Thompson, Tinker, Van Den~Bosch, Westfall, Wilkinson, Wright, Xiao, \& Zhang}]{bundyOVERVIEWSDSSIVMaNGA2014a}
 ---. 2014{\natexlab{b}}, The Astrophysical Journal, 798, 7, \dodoi{10.1088/0004-637X/798/1/7}
 
+\bibitem[{Cotton(2008)}]{cottonObitDevelopmentEnvironment2008}
+Cotton, W.~D. 2008, Publications of the Astronomical Society of the Pacific, 120, 439, \dodoi{10.1086/586754}
+
+\bibitem[{Cotton \& Schwab(2010)}]{cottonAttemptAdaptSaultWieringa2010}
+Cotton, W.~D., \& Schwab, F.~R. 2010
+
 \bibitem[{Dawson {et~al.}(2016)Dawson, Kneib, Percival, Alam, Albareti, Anderson, Armengaud, Aubourg, Bailey, Bautista, Berlind, Bershady, Beutler, Bizyaev, Blanton, Blomqvist, Bolton, Bovy, Brandt, Brinkmann, Brownstein, Burtin, Busca, Cai, Chuang, Clerc, Comparat, Cope, Croft, {Cruz-Gonzalez}, Costa, Cousinou, Darling, Macorra, Torre, Delubac, Bourboux, Dwelly, Ealet, Eisenstein, Eracleous, Escoffier, Fan, Finoguenov, {Font-Ribera}, Frinchaboy, Gaulme, Georgakakis, Green, Guo, Guy, Ho, Holder, Huehnerhoff, Hutchinson, Jing, Jullo, Kamble, Kinemuchi, Kirkby, Kitaura, Klaene, Laher, Lang, Laurent, Goff, Li, Liang, Lima, Lin, Lin, Lin, Long, Lundgren, MacDonald, Maia, Malanushenko, Malanushenko, Mariappan, McBride, McGreer, M{\'e}nard, Merloni, Meza, {Montero-Dorta}, Muna, Myers, Nandra, Naugle, Newman, Noterdaeme, Nugent, Ogando, Olmstead, Oravetz, Oravetz, Padmanabhan, {Palanque-Delabrouille}, Pan, Parejko, P{\^a}ris, Peacock, Petitjean, Pieri, Pisani, Prada, Prakash, Raichoor, Reid, Rich, Ridl, {Rodriguez-Torres}, Rosell, Ross, Rossi, Ruan, Salvato, Sayres, Schneider, Schlegel, Seljak, Seo, Sesar, Shandera, Shu, Slosar, Sobreira, Streblyanska, Suzuki, Taylor, Tao, Tinker, Tojeiro, {Vargas-Maga{\~n}a}, Wang, Weaver, Weinberg, White, {Wood-Vasey}, Yeche, Zhai, Zhao, Zhao, Zheng, Zhu, \& Zou}]{dawsonSDSSIVEXTENDEDBARYON2016}
 Dawson, K.~S., Kneib, J.-P., Percival, W.~J., {et~al.} 2016, The Astronomical Journal, 151, 44, \dodoi{10.3847/0004-6256/151/2/44}
 
@@ -74,8 +80,14 @@ Moore, G.~E. 2006, IEEE Solid-State Circuits Society Newsletter, 11, 33, \dodoi{
 \bibitem[{{NSF-DOE Vera C. Rubin Observatory}(2025)}]{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}
 {NSF-DOE Vera C. Rubin Observatory}. 2025, {{PSTN-019}}: {{The LSST Science Pipelines Software}}: {{Optical Survey Pipeline Reduction}} and {{Analysis Environment}},  NSF-DOE Vera C. Rubin Observatory, \dodoi{10.71929/RUBIN/2570545}
 
+\bibitem[{Ratcliffe(2021)}]{ratcliffeSDPPipelinesOverview2021}
+Ratcliffe, S. 2021, {{SDP}} Pipelines Overview, https://skaafrica.atlassian.net/wiki/spaces/ESDKB/pages/338723406/SDP+pipelines+overview
+
 \bibitem[{Richards(2020)}]{richardsWhatVignetting2020}
 Richards, S. 2020, What Is Vignetting?
+
+\bibitem[{Verbunt \& Van~Gent(2010)}]{verbuntThreeEditionsStar2010}
+Verbunt, F., \& Van~Gent, R.~H. 2010, Astronomy and Astrophysics, 516, A28, \dodoi{10.1051/0004-6361/201014002}
 
 \bibitem[{Woudt {et~al.}(2018)Woudt, Fender, Corbel, Coriat, Daigne, Falcke, Girard, Heywood, Horesh, Horrell, Jonker, Joseph, Kamble, Knigge, K{\"o}rding, Kotze, Kouveliotou, Lynch, Maccarone, Meintjes, Migliari, Murphy, Nagayama, Nelemans, Nicholson, O'Brien, Oodendaal, Oozeer, Osborne, {Perez-Torres}, Ratcliffe, Ribeiro, Rol, Rushton, Scaife, Schurch, Sivakoff, Staley, Steeghs, Stewart, Swinbank, Vergani, Warner, Wiersema, Armstrong, Groot, McBride, {Miller-Jones}, Mooley, Stappers, Wijers, Bietenholz, Blyth, B{\"o}ttcher, Buckley, Charles, Chomiuk, Coppejans, De~Blok, Van Der~Heyden, Van Der~Horst, \& Van~Soelen}]{woudtThunderKATMeerKATLarge2018}
 Woudt, P.~A., Fender, R., Corbel, S., {et~al.} 2018, in Proceedings of {{MeerKAT Science}}: {{On}} the {{Pathway}} to the {{SKA}} --- {{PoS}}({{MeerKAT2016}}) (Stellenbosch, South Africa: Sissa Medialab), 013, \dodoi{10.22323/1.277.0013}
