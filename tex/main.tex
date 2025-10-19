@@ -13,8 +13,6 @@
 \begin{abstract}
 I'm making my abstract my to do list for now
 
-\textbf{NOTE: I fixed the things you told me to fix, I added a new figure to sdss section, I added lsst section}
-
 \textbf{1. Fix the SDSS part based on provided notes, also make real-time processing section}
 
 \textbf{2. Find a paper or part of it that describes how SDSS stores the data. I don't think I've dont that sufficiently}
@@ -37,36 +35,36 @@ The concept of data has long been central throughout the history of astronomy. D
 Although the nature of data varies fundamentally across different fields, one trend has remained consistent: the continual evolution of data science. As explained in The Fourth Paradigm \citep{heyFourthParadigmDataIntensive2009}, this evolution can be characterized through four successive paradigms. 
 In the following sections, I describe the progression of data acquisition across these paradigms and illustrate each using examples from astronomy. I will then explain how SKA and LSST fit into this trajectory and exemplify the emerging era of data-intensive discovery.
 \subsection{The Paradigms of Data Science}
-The first and most primitive paradigm, as described by \cite{heyFourthParadigmDataIntensive2009}, is empirical evidence. 
+The first and most primitive paradigm, as described by \citep{heyFourthParadigmDataIntensive2009}, is empirical evidence. 
 Empirical evidence refers to data collected through traditional means, such as direct observation or experimentation. 
 The primary purpose of empirical evidence is to identify patterns that allow scientists to develop a fundamental understanding of the natural world. 
 Throughout much of human history, empirical evidence has dominated knowledge generation. 
 An example of the first paradigm in astronomy is the career of Tycho Brahe, a Danish astronomer. Throughout his career in the 16th century, Brahe collected and cataloged data on the position of astronomical bodies using naked-eye observations. Tycho Brahe's catalogue was accurate to only around 1' precision and took decades to acquire \citep{verbuntThreeEditionsStar2010}.
 However, empirical evidence can be compromised by human error, the precision of the instruments, and, most importantly, the relatively slow pace of data acquisition compared to subsequent paradigms.
 
-The second paradigm is analytical evidence. Analytical evidence is obtained by constructing mathematical formulas and theoretical frameworks based on empirical data \cite{heyFourthParadigmDataIntensive2009}. 
+The second paradigm is analytical evidence. Analytical evidence is obtained by constructing mathematical formulas and theoretical frameworks based on empirical data \citep{heyFourthParadigmDataIntensive2009}. 
 Unlike the empirical evidence, which merely demonstrates that phenomena occur, the second paradigm seeks to explain why they occur. 
 An example of the second paradigm in astronomy is the work of Johannes Kepler, who used Brahe's empirical observations to derive the laws of planetary motion \citep{heyFourthParadigmDataIntensive2009}. 
 By transforming raw observational data into mathematical laws, Kepler exemplified how analytical evidence advances scientific understanding beyond description to explanation.
 
-The third paradigm is simulation evidence \cite{heyFourthParadigmDataIntensive2009}, a relatively recent development. Simulation models natural phenomena that are too complex to model analytically or compute by hand. 
+The third paradigm is simulation evidence \citep{heyFourthParadigmDataIntensive2009}, a relatively recent development. Simulation models natural phenomena that are too complex to model analytically or compute by hand. 
 It allows interpolation and extrapolation of data using computational techniques grounded in known physical laws. 
 For example, in astronomy, N-body simulations are used to study the complex dynamical evolution of planetary systems and galaxies. 
 
-The fourth and most recent paradigm is data-intensive science \cite{heyFourthParadigmDataIntensive2009}. 
-This paradigm is characterized by the unprecedented scale, velocity, and complexity of data acquisition, driven in part by exponential advances in computational power and detector technologies, often associated with Moore's law \cite{heyFourthParadigmDataIntensive2009}. 
+The fourth and most recent paradigm is data-intensive science \citep{heyFourthParadigmDataIntensive2009}. 
+This paradigm is characterized by the unprecedented scale, velocity, and complexity of data acquisition, driven in part by exponential advances in computational power and detector technologies, often associated with Moore's law \citep{heyFourthParadigmDataIntensive2009}. 
 Unlike earlier paradigms, which focused on observation, theory, or simulation, data-intensive science emphasizes the ability to manage, analyze, and interpret vast datasets that exceed the capacity of traditional methods. 
 While this exponential growth in data has enabled transformative discoveries, it also introduces significant challenges related to storage, processing, and accessibility. 
 
 \subsection{The Rise of Big Data in Astronomy}
-Astronomy has become data intensive. Modern observatories may now generate petabyte-scale data that need new strategies for data management and analysis \cite{heyFourthParadigmDataIntensive2009}. 
+Astronomy has become data intensive. Modern observatories may now generate petabyte-scale data that need new strategies for data management and analysis \citep{heyFourthParadigmDataIntensive2009}. 
 The fourth paradigm enables discoveries from interpreting massive data sets. 
 However, these advances also expose alarming issues, including bottlenecks in the data pipeline, storage challenges, increased skills needed to handle the data, and open access concerns. 
 The field of astronomy is both a beneficiary and a victim of this data-intensive transition. 
 
-As mentioned above, the exponential growth of data acquisition can be attributed to Moore's law \cite{heyFourthParadigmDataIntensive2009}.  
-Moore's law predicts that integrated circuit chip density doubles approximately each year at a fixed price point \cite{mooreCrammingMoreComponents2006}.
-\cite{mooreCrammingMoreComponents2006} questioned whether technical development would sustain the growth.
+As mentioned above, the exponential growth of data acquisition can be attributed to Moore's law \citep{heyFourthParadigmDataIntensive2009}.  
+Moore's law predicts that integrated circuit chip density doubles approximately each year at a fixed price point \citep{mooreCrammingMoreComponents2006}.
+\citep{mooreCrammingMoreComponents2006} questioned whether technical development would sustain the growth.
 
 Moore's law can be seen in many data-intensive fields, including astronomy.
 It explains both the recent development of big data in astronomy, and predicts future challenges.
@@ -84,7 +82,7 @@ The Telescope is stationed at the Apache Point Observatory in New Mexico, where 
 It is able to observe a 3$^\circ$ field of view by use of two corrector lenses \citep{gunn25TelescopeSloan2006}.
 
 The SDSS also uses the Irénée du Pont telescope at Las Campanas Observatory \footnote{\url{https://www.lco.cl/irenee-du-pont-telescope/}}. This telescope is stationed in Chile, where it observes the southern hemisphere instead. 
-Similar to the foundational telescope at Apache Point, this telescope has a 2.1$^\circ$ field of view but only uses one corrector lens \cite{bowenOpticalDesign40in1973}.
+Similar to the foundational telescope at Apache Point, this telescope has a 2.1$^\circ$ field of view but only uses one corrector lens \citep{bowenOpticalDesign40in1973}.
 
 The third telescope is the NMSU 1-meter Telescope \footnote{\url{https://newapo.apo.nmsu.edu/}}. The NMSU telescope is stationed at the Apache Point Observatory alongside the foundational telescope. 
 The NMSU telescope is designed to observe bright stars that are too bright for the aforementioned two telescopes to observe \citep{majewskiApachePointObservatory2017}. 
@@ -174,13 +172,13 @@ The 2.5-meter telescope plays a central role in the operations of the SDSS. It w
 
 
 \textbf{(1) The SDSS 2.5 m Telescope:}  
-According to Gunn et al. (2006), the SDSS camera contains “30 2048 x 2048 Scientific Imaging Technologies Charge-Coupled Devices (CCDs) and 24 2048 x 400 CCDs” \cite{gunn25TelescopeSloan2006}. 
+According to Gunn et al. (2006), the SDSS camera contains “30 2048 x 2048 Scientific Imaging Technologies Charge-Coupled Devices (CCDs) and 24 2048 x 400 CCDs” \citep{gunn25TelescopeSloan2006}. 
 A CCD is a detector that converts incoming light into an electronic signal. 
 When photons strike the CCD, they generate electrons through the photoelectric effect. 
 Using applied voltages, the resulting charge is measured based on the number of electrons produced. 
-That measurement is then converted into a digital value and stored as a pixel, forming an image \cite{lesserSummaryChargeCoupledDevices2015}.
+That measurement is then converted into a digital value and stored as a pixel, forming an image \citep{lesserSummaryChargeCoupledDevices2015}.
 
-Another major innovation that enables the SDSS to collect data is the pair of fiber-fed double spectrographs, which record imaging data across wavelengths from 3800 to 9200~\AA\ and at field angles between 0 and 90$^{\circ}$ \cite{gunn25TelescopeSloan2006}. 
+Another major innovation that enables the SDSS to collect data is the pair of fiber-fed double spectrographs, which record imaging data across wavelengths from 3800 to 9200~\AA\ and at field angles between 0 and 90$^{\circ}$ \citep{gunn25TelescopeSloan2006}. 
 present measurements of the optical performance of these instruments, which are summarized in Figure~\ref{fig:SDSS_Table}.
 
 \begin{figure}[h!]
@@ -195,20 +193,20 @@ $f_b$ is the best-focus distance, which is the position that provides the sharpe
 $h/dh$ represents the lateral color, and $D$ indicates the longitudinal difference from the best focus. 
 Finally, $\epsilon$ is the root mean square (rms) image diameter. 
 Among these parameters, the lateral color and longitudinal difference are the most important for image quality because smaller values indicate sharper images. 
-Based on the data from \cite{gunn25TelescopeSloan2006}, both of these quantities remain close to zero for most wavelengths and field angles, except between roughly 5300 and 6500~\AA, which demonstrates the high optical accuracy of the SDSS spectrographs.
+Based on the data from \citep{gunn25TelescopeSloan2006}, both of these quantities remain close to zero for most wavelengths and field angles, except between roughly 5300 and 6500~\AA, which demonstrates the high optical accuracy of the SDSS spectrographs.
 
-The combination of these two innovations alongside others help the 2.5 m telescope collect data at a rate of about 20Gb/hr \cite{luptonSDSSImagingPipelines2007}.
+The combination of these two innovations alongside others help the 2.5 m telescope collect data at a rate of about 20Gb/hr \citep{luptonSDSSImagingPipelines2007}.
 
 \textbf{(2) The Irénée du Pont Telescope:}  
-Unlike the 2.5 m telescope, the Du Pont Telescope does not rely on CCDs to collect data. According to Bowen's 1973 paper, the telescope is described as a modified Ritchey-Chrétien design with Gascoigne correctors \cite{bowenOpticalDesign40in1973}.
-The Du pont telescope uses a 100-inch primary mirror. Approximately 40\% of the light is reflected to the secondary mirror, obtaining only a 16\% loss of light at that stage. \cite{bowenOpticalDesign40in1973}
+Unlike the 2.5 m telescope, the Du Pont Telescope does not rely on CCDs to collect data. According to Bowen's 1973 paper, the telescope is described as a modified Ritchey-Chrétien design with Gascoigne correctors \citep{bowenOpticalDesign40in1973}.
+The Du pont telescope uses a 100-inch primary mirror. Approximately 40\% of the light is reflected to the secondary mirror, obtaining only a 16\% loss of light at that stage. \citep{bowenOpticalDesign40in1973}
 The combination of light from the two aforementioned mirrors are then sent to a 20 inch x 20 inch plate, where monocromatic images are formed.
 
-The du Pont Telescope uses 18.9 inch nonvignetted plates in order to minimize vignetting \cite{bowenOpticalDesign40in1973}. Vignetting is the process where light beds through the lense of a telescope. The bending form a cone of light, which causes images to be darker near the edges and brighter in the center of the image \cite{richardsWhatVignetting2020}.
-Because of the nonvignetted plates, the du Pont Telescope experiences an exceptionally low 3\% percent loss of light \cite{bowenOpticalDesign40in1973}.
+The du Pont Telescope uses 18.9 inch nonvignetted plates in order to minimize vignetting \citep{bowenOpticalDesign40in1973}. Vignetting is the process where light beds through the lense of a telescope. The bending form a cone of light, which causes images to be darker near the edges and brighter in the center of the image \citep{richardsWhatVignetting2020}.
+Because of the nonvignetted plates, the du Pont Telescope experiences an exceptionally low 3\% percent loss of light \citep{bowenOpticalDesign40in1973}.
 
-Another technology the du Pont Telescope applies is a Gascoigne corrector plate. The plate helps with data collection. The Gasciogne corrector plate is able to be moved, which can help optimize the collection of light in a wanted wavelength \cite{bowenOpticalDesign40in1973}.
-Given a seperation of 1000 mm from the end of the corrector plate to the focus gives an image with a minimized astigmatism for a refractive index of n = 1.47 \cite{bowenOpticalDesign40in1973}.
+Another technology the du Pont Telescope applies is a Gascoigne corrector plate. The plate helps with data collection. The Gasciogne corrector plate is able to be moved, which can help optimize the collection of light in a wanted wavelength \citep{bowenOpticalDesign40in1973}.
+Given a seperation of 1000 mm from the end of the corrector plate to the focus gives an image with a minimized astigmatism for a refractive index of n = 1.47 \citep{bowenOpticalDesign40in1973}.
 At a given wavelength, the change of length which minimizes astigmatism is described in Bowen's paper as
 
 \begin{equation}
@@ -217,24 +215,23 @@ At a given wavelength, the change of length which minimizes astigmatism is descr
 
 Where $\Delta L$ is the change in seperation in millimeters and $\Delta n$ is the difference between a refractive index of 1.47 and the index wanted.
 
-The last technology the du Pont Telescope uses is conical baffles. The reason for this is to promote shielding in the telescope \cite{bowenOpticalDesign40in1973}.
+The last technology the du Pont Telescope uses is conical baffles. The reason for this is to promote shielding in the telescope \citep{bowenOpticalDesign40in1973}.
 As explained in the Bowen paper, shielding is necessary in order to protect the photographic plate from light that escapes from the secondary lense due to long time exposure.
-As explained in the Bowen paper, the conic baffles are "located in the space between the incoming beam as it appraoches the primary and the return beam from the secondary to the plate" \cite{bowenOpticalDesign40in1973}.
-Theoretically, the conic baffles have the disatvantage of producing a diffraction pattern. However, as explained by Bowen, this should not majorly affect the images of stars \cite{bowenOpticalDesign40in1973}. 
+As explained in the Bowen paper, the conic baffles are "located in the space between the incoming beam as it appraoches the primary and the return beam from the secondary to the plate" \citep{bowenOpticalDesign40in1973}.
+Theoretically, the conic baffles have the disatvantage of producing a diffraction pattern. However, as explained by Bowen, this should not majorly affect the images of stars \citep{bowenOpticalDesign40in1973}. 
 
 \textbf{(3) The New Mexico State University (NMSU) Telescope:}  
 The NMSU telescope takes the most technologically advanced approach to collecting data compared to the 2.5 m telescope and the du Pont Telescope.
-The NMSU telescope uses a camera that has a 2048 x 2048 CCD. The camera is controled by a linux computer, which is connected by fiber optic cables \cite{holtzmanNMSU1Telescope2010}.
+The NMSU telescope uses a camera that has a 2048 x 2048 CCD. The camera is controled by a linux computer, which is connected by fiber optic cables \citep{holtzmanNMSU1Telescope2010}.
 
-The data collection of the NMSU telescope is almost fully automated using C++, the only time it is not is when engineering is being done on the telescope \cite{holtzmanNMSU1Telescope2010}.
+The data collection of the NMSU telescope is almost fully automated using C++, the only time it is not is when engineering is being done on the telescope \citep{holtzmanNMSU1Telescope2010}.
 The NMSU telescope has a camera which analyzes the brightness level of the sky to see if it is dark enough to start collecting data.
-When the sky becomes dark enough, the telescope initiates its program. The telescope goes through the list and observes said objects \cite{holtzmanNMSU1Telescope2010}.
+When the sky becomes dark enough, the telescope initiates its program. The telescope goes through the list and observes said objects \citep{holtzmanNMSU1Telescope2010}.
 Objects can, however, be observed as many times as requested. 
-
 \paragraph{Data Processing} 
  %\textbf{NOTE: This is gonna super complex, Study this hard. Its only surface level rn } 
-The SDSS processes its data through an innovative acquisition system that records and organizes observations in real time while maintaining strict quality control \cite{gunn25TelescopeSloan2006}. 
-This system ensures that data are processed and stored efficiently without any loss of precision. \cite{gunn25TelescopeSloan2006}. 
+The SDSS processes its data through an innovative acquisition system that records and organizes observations in real time while maintaining strict quality control \citep{gunn25TelescopeSloan2006}. 
+This system ensures that data are processed and stored efficiently without any loss of precision. \citep{gunn25TelescopeSloan2006}. 
 The data pipeline of the SDSS can be described by two different fields of data, the imaging pipeline and the spectroscopy pipeline
 
  \textbf{(1) Imaging Data Pipeline:} 
@@ -284,27 +281,40 @@ One instance of a task is the \texttt{PipelineTask}, which serves to organize su
 The most important subtask, labeled \texttt{daf\_butler}, handles the data storage. This subtask is titled by the LSST as The Data Butler. The Butler serves as a database to store collected data. It stores objects with data IDs similar to SQL, with headers that hold useful information \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}.
 An example of this would be a data coordinate labeled \texttt{instrument}="LSSTCam", \texttt{exposure}=299792458, \texttt{detector}=42, \texttt{band}=z, \texttt{day\_obs}=20251011.
 
-
-
 \paragraph{Data Processing} 
-This task first Before the LSST analyzes data, it removes noise. An example of noise would be \textbf{LOOK AT 5.1 TO FINISH THIS}.
 
 There are multiple tasks which define how the LSST processed data to find objects. These are all defined in the \texttt{meas\_algorithms} package \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}.
 The task that first handles processing the catalogued images is the \texttt{SourceDetectionTask} \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}. 
 This task uses Gaussian smoothing in the point spread function. It then convolves the collected image with the point spread function in order to suppress potential noise \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}.
 
-Another task that the LSST uses to process data is \texttt{MaskStreaksTask} \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}. The task serves to mask pixels from streaks from other satellites. It identifies streaks using a Canny Filter and the Kernel-Based Hough Transform \textbf{Note: Fix this citation } \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}.
+Another task that the LSST uses to process data is \texttt{MaskStreaksTask} \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}. The task serves to mask pixels from streaks from other satellites. It identifies streaks using a Canny Filter and the Kernel-Based Hough Transform \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025, fernandesRealtimeLineDetection2008}.
 This task is combined with the deblending of collected images allows for the LSST to accurately identify objects.
 
+%After that task is done, the data is deblended \cite{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}. 
+
 \paragraph{Real-Time Processing}
+%The LSST uses a package called \texttt{ap$_$pipe} for real-time processing \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025,ktProposalPrototypePrompt2023}.
+%This package 
+
 
 \subsection{The Radio Big Data Pipeline}
 
 \subsubsection{The MeerKAT}
 
+\textbf{NEW TEXT STARTS HERE:}
 \paragraph{Data Processing}
 
 The MeerKAT data processing pipeline is split into three parts, the calibration pipeline, the continuum pipeline, and the spectral pipeline \citep{ratcliffeSDPPipelinesOverview2021}.
+
+ \textbf{(1) The Calibration Pipeline:} 
+The pipeline starts by choosing an antenna as a reference point for the other antennas \citep{ratcliffeSDPPipelinesOverview2021}. This process is done by collecting the first scan of an antenna. 
+The data is then averaged and fourier transformed. After that, it is the ratio called the peak-to-noise ratio is measured. The peak-to-noise ratio is the ratio of the maximum of the fourier transformed data and the rms noise at a distance far from the peak \citep{ratcliffeSDPPipelinesOverview2021}.
+After tha the process repeats for every antenna and the one with the highest median with respect to every baseline for the peak-to-noise ratio is chosen as the reference antenna \citep{ratcliffeSDPPipelinesOverview2021}.
+This antenna will have all of its calibration solutions set to zero \citep{ratcliffeSDPPipelinesOverview2021}. 
+
+
+The purpose of the calibration pipeline is to ensure that the reference antenna and the other antennas by extension are callibrated. At the start of every observation, the reference antenna is evaluated based on certain flags, such as data loss \citep{ratcliffeSDPPipelinesOverview2021}. 
+If 80\% or more flags are pinged, a new reference antenna is determined based on the aforementioned process \citep{ratcliffeSDPPipelinesOverview2021}.
 
  \textbf{(2) The Continuum Pipeline:} 
 The second pipeline is the continuum pipeline. This pipeline aims to produce continuum images using the orbit software package \citep{ratcliffeSDPPipelinesOverview2021, cottonObitDevelopmentEnvironment2008}.
@@ -323,10 +333,10 @@ The UV data then stores headers of \texttt{ntimes, nbaselines, nchannels, npolar
 Given the Meerkat's design of 48 antennas, short baselines dominate. This causes an inflation in data volume \citep{ratcliffeSDPPipelinesOverview2021}. In order to circumvent this, a baseline dependent averaging step is applied \citep{ratcliffeSDPPipelinesOverview2021}.
 Time averaging the data with respect to the baseline before merging them into a dataset. This step reduces the data volume by about 3-4 times with a minimal loss of 1% of the amplitude \citep{ratcliffeSDPPipelinesOverview2021}.
 
-The aforementioneed \texttt{MFImage} task uses joint frequency deconvolution to handle wide-band effects in wide-band images \citep{ratcliffeSDPPipelinesOverview2021}. 
+The aforementioned \texttt{MFImage} task uses joint frequency deconvolution to handle wide-band effects in wide-band images \citep{ratcliffeSDPPipelinesOverview2021}. 
 Normally, Meerkat uses around 140 circular facets with a size of around 6 arcminutes which cover 1 degree from the phase center \citep{ratcliffeSDPPipelinesOverview2021}.
-Additionally, there are facets with around 1 degree that  use the SUMSS or NVSS catalogue for a radius of 2.5 from the center of the phase \cite{ratcliffeSDPPipelinesOverview2021}.
-These 1 degree facets are used for phenomena that are ancipiated to have a flux density greater than 5 mJy \cite{ratcliffeSDPPipelinesOverview2021}.
+Additionally, there are facets with around 1 degree that  use the SUMSS or NVSS catalogue for a radius of 2.5 from the center of the phase \citep{ratcliffeSDPPipelinesOverview2021}.
+These 1 degree facets are used for phenomena that are ancipiated to have a flux density greater than 5 mJy \citep{ratcliffeSDPPipelinesOverview2021}.
 Due to the fact that these facets deal with wide-band images, they also deal with wide-band imaging effects. These effects are bypassed by splitting the frequency band used into 10 components \citep{ratcliffeSDPPipelinesOverview2021}. 
 When the joint frequency deconvolution is initiated, the brightest light sources in the dataset are found and subtracted from the slices of data individually. This is called the CLEAN algorithm \citep{ratcliffeSDPPipelinesOverview2021}.
 
@@ -346,7 +356,7 @@ The chunk system only partially implements the solution of transposing the data.
 While all that is occuring, conservative baseline-depedent averaging is also applied to the visibilities \citep{ratcliffeSDPPipelinesOverview2021}. The coordinates of every visibility are solved for, then visibilities with matching coordinates are merged, which is the last of the preprocessing of the visiblities \citep{ratcliffeSDPPipelinesOverview2021}.
 
 After all of that is done, By using CUDA, a parallel processing software, every channel is imaged separetly. The use of CUDA allows for the processing to speed up due to the usage of NVIDIA GPUs \citep{ratcliffeSDPPipelinesOverview2021}. 
-Lastly, the data follows a cycle as described in the figure below in order to be updated. 
+Lastly, the data follows a cycle in order to be updated as described in the figure below. 
 
  \begin{figure}[h!]
   \centering
@@ -355,7 +365,7 @@ Lastly, the data follows a cycle as described in the figure below in order to be
   \label{fig:Spec_pipeline}
 \end{figure}
 
-
+\texttt{NEW TEXT ENDS HERE:}
 
 \subsubsection{The Square Kilometre Array (SKA)}
 
@@ -385,10 +395,19 @@ The SDSS team also promotes transparency in coding by implementing Git and SVN i
 Overall, the SDSS has demonstrated a strong commitment to making their data and software open source and transparent. This in turn helps the development of science, by ensuring that knowledge is accessible to all regardless of resources. 
 
 \subsubsection{The LSST Policy}
-Similar to the SDSS, the LSST has declared a commitment to having their software open source and their pipeline transparent.
+%Similar to the SDSS, the LSST has declared a commitment to having their software open source and their pipeline transparent.
 
+\textbf{New text starts here:}
 \subsubsection{The MeerKAT Policy}
+%The South African Radio Astronomy Observatory (SARAO) has expressed that MeerKAT data is to be open source with adequate acknowledgement through two steps \citep{camiloDOCUMENTDISTRIBUTION2024}. 
+%First and foremost, the SARAO team emphasize that all MeerKAT data used must come from the MeerKAT ADS Library\footnote{\url{https://ui.adsabs.harvard.edu/public-libraries/wmc9yO6IQ3mUZCPx7MQRxg}} \citep{camiloDOCUMENTDISTRIBUTION2024}. 
+%The other step is in any publication that contains MeerKAT data, the author must state the following statement verbatim: "The MeerKAT telescope is operated by the South African Radio Astronomy Observatory, which is a facility of the National Research Foundation, an agency of the Department of Science and Innovation." \citep{camiloDOCUMENTDISTRIBUTION2024}.
 
+%The SARAO also encourages the user input. The SARAO advices users to configure with the data, creating data products \citep{camiloDOCUMENTDISTRIBUTION2024}. The data products can then be released into the MeerKAT archive by contacting the SARAO, which only serves to better the MeerKAT \citep{camiloDOCUMENTDISTRIBUTION2024}.
+%Another policy the SARAO implements with the MeerKAT is the use of feedback. The SARAO has developed a help desk \footnote{\url{https://commons.datacite.org/doi.org?query=client.uid%3Awhno.ljncxe&resource-type=dataset}} from which users can ask general questions \citep{camiloDOCUMENTDISTRIBUTION2024}. If users have questions on policies of the MeerKAT, they are advised to communicate them to the SARAO chief scientist \citep{camiloDOCUMENTDISTRIBUTION2024}.
+%The use of user input has also caused the creation of the SARAO Users Committee, which serves to voice the opinions of users towards the SARAO MD \citep{camiloDOCUMENTDISTRIBUTION2024}.
+
+\textbf{New text ends here:}
 
 \subsubsection{The SKA Policy}
 
@@ -484,6 +503,7 @@ plt.show()
 
 
 \bibliography{references}
+\bibliography{filename}
 
 \end{document}
 
