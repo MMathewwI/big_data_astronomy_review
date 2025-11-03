@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  19 OCT 2025 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  2 NOV 2025 23:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,15 +438,83 @@ File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 File: listings.cfg 2024/05/25 1.10b listings configuration
 ))
 Package: listings 2024/05/25 1.10b (Carsten Heinz)
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 7.
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 7.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 7.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 7.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 7.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip70
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen179
+)
+LaTeX Info: Redefining \text on input line 28.
+) (c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen180
+) (c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count359
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count360
+\leftroot@=\count361
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count362
+\DOTSCASE@=\count363
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box91
+\strutbox@=\box92
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen181
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count364
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count365
+\dotsspace@=\muskip18
+\c@parentequation=\count366
+\dspbrk@lvl=\count367
+\tag@help=\toks28
+\row@=\count368
+\column@=\count369
+\maxfields@=\count370
+\andhelp@=\toks29
+\eqnshift@=\dimen182
+\alignsep@=\dimen183
+\tagshift@=\dimen184
+\tagwidth@=\dimen185
+\totwidth@=\dimen186
+\lineht@=\dimen187
+\@envbody=\toks30
+\multlinegap=\skip71
+\multlinetaggap=\skip72
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\linenoamsmath@ams@eqpen=\count371
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 8.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 8.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 8.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 8.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 8.
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count359
-\l__pdf_internal_box=\box91
+\l__color_backend_stack_int=\count372
+\l__pdf_internal_box=\box93
 ) (./main.aux
 
 Package natbib Warning: Citation `MIGHTEESurvey' multiply defined.
@@ -544,61 +612,67 @@ Package natbib Warning: Citation `woudtThunderKATMeerKATLarge2018' multiply defi
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count360
-\scratchdimen=\dimen179
-\scratchbox=\box92
-\nofMPsegments=\count361
-\nofMParguments=\count362
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count363
-\MPscratchDim=\dimen180
-\MPnumerator=\count364
-\makeMPintoPDFobject=\count365
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count373
+\scratchdimen=\dimen188
+\scratchbox=\box94
+\nofMPsegments=\count374
+\nofMParguments=\count375
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen189
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
+\everyMPtoPDFconversion=\toks33
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (c:/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 7.
+Package hyperref Info: Link coloring ON on input line 8.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\c@lstlisting=\count366
-Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 7.
-Class revtex4-1 Info: Reinvoke \linenumbers on input line 7.
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 7.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 28.
+\c@lstlisting=\count379
+Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 8.
+Class revtex4-1 Info: Reinvoke \linenumbers on input line 8.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 8.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 25.
  (c:/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./main.toc [1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
@@ -606,26 +680,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `main.toc'.
 
  [2]
-Overfull \hbox (15.24416pt too wide) in paragraph at lines 72--72
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 69--69
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox (15.24416pt too wide) in paragraph at lines 72--72
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 69--69
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox (15.24416pt too wide) in paragraph at lines 72--72
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 69--69
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox (15.24416pt too wide) in paragraph at lines 72--72
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 69--69
 [][]| [] [][][]| 
  []
 
 
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 81--81
+[][]| [] [][][]| 
+ []
+
+
+Overfull \vbox (22.88126pt too high) has occurred while \output is active []
+
+ [3]
 Overfull \hbox (15.24416pt too wide) in paragraph at lines 84--84
 [][]| [] [][][]| 
  []
@@ -636,12 +718,552 @@ Overfull \hbox (15.24416pt too wide) in paragraph at lines 87--87
  []
 
 
-Overfull \vbox (35.52129pt too high) has occurred while \output is active []
+Overfull \hbox (15.24416pt too wide) in paragraph at lines 89--89
+[][]| [] [][][]| 
+ []
 
- [3]
+
 Overfull \hbox (15.24416pt too wide) in paragraph at lines 90--90
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox 
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 93--93
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 98--98
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 103--103
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 107--107
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 110--110
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 111--111
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 111--111
+[][]| [] [][][]| 
+ []
+
+
+Overfull \vbox (62.0814pt too high) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 114--114
+[][]| [] [][][]| 
+ []
+
+<SKA_Graph.png, id=312, 1129.21875pt x 606.76688pt>
+File: SKA_Graph.png Graphic file (type png)
+<use SKA_Graph.png>
+Package pdftex.def Info: SKA_Graph.png  used on input line 118.
+(pdftex.def)             Requested size: 410.4955pt x 220.57462pt.
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 119--119
+[][][][]| 
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 119--119
+[][][][]| 
+ []
+
+
+Overfull \vbox (7.95499pt too high) has occurred while \output is active []
+
+ [5 <./SKA_Graph.png>]
+
+Package natbib Warning: Citation `yorkSloanDigitalSky2000' on page 6 undefined on input line 161.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 6 undefined on input line 161.
+
+<gunn_table_5.png, id=347, 227.04825pt x 350.5095pt>
+File: gunn_table_5.png Graphic file (type png)
+<use gunn_table_5.png>
+Package pdftex.def Info: gunn_table_5.png  used on input line 178.
+(pdftex.def)             Requested size: 205.24384pt x 316.8462pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 6 undefined on input line 192.
+
+[6] [7 <./gunn_table_5.png>]
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 8 undefined on input line 215.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 8 undefined on input line 216.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 8 undefined on input line 217.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 8 undefined on input line 218.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 8 undefined on input line 219.
+
+
+Package natbib Warning: Citation `sloandigitalskysurveycollaborationInstruments2025' on page 8 undefined on input line 225.
+
+[8]
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 261--261
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 261--261
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 263--263
+[][]| [] [][][]| 
+ []
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 9 undefined on input line 288.
+
+<AAS2TRO.png, id=458, 271.0125pt x 220.4235pt>
+File: AAS2TRO.png Graphic file (type png)
+<use AAS2TRO.png>
+Package pdftex.def Info: AAS2TRO.png  used on input line 293.
+(pdftex.def)             Requested size: 205.24384pt x 166.93835pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 9 undefined on input line 298.
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 299--299
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 299--299
+[][]| [] [][][]| 
+ []
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 9 undefined on input line 299.
+
+[9]
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 301.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 302.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 304.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 304.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 305.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 307.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 308.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 309.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 316.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 324.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 325.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 326.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 327.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 328.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 10 undefined on input line 329.
+
+[10 <./AAS2TRO.png>]
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 342.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 343.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 344.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 360.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 361.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 369.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 369.
+
+
+Package natbib Warning: Citation `sedgewickAAS2RTOAutomatedAlert2025' on page 11 undefined on input line 390.
+
+[11]
+<MeerKAT_Image.png, id=533, 489.32813pt x 376.40625pt>
+File: MeerKAT_Image.png Graphic file (type png)
+<use MeerKAT_Image.png>
+Package pdftex.def Info: MeerKAT_Image.png  used on input line 432.
+(pdftex.def)             Requested size: 256.55872pt x 197.35777pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12]
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 459--459
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 461--461
+[][]| [] [][][]| 
+ []
+
+<Meerkat_Spec_pipeline.png, id=602, 509.5035pt x 181.8795pt>
+File: Meerkat_Spec_pipeline.png Graphic file (type png)
+<use Meerkat_Spec_pipeline.png>
+Package pdftex.def Info: Meerkat_Spec_pipeline.png  used on input line 465.
+(pdftex.def)             Requested size: 461.80255pt x 164.85008pt.
+[13 <./MeerKAT_Image.png>]
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 14 undefined on input line 482.
+
+
+Package natbib Warning: Citation `ahumada16thDataRelease2020' on page 14 undefined on input line 483.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 14 undefined on input line 485.
+
+
+Package natbib Warning: Citation `collaborationNineteenthDataRelease2025' on page 14 undefined on input line 486.
+
+<volume_incremental-dr17.png, id=621, 882.29625pt x 688.5725pt>
+File: volume_incremental-dr17.png Graphic file (type png)
+<use volume_incremental-dr17.png>
+Package pdftex.def Info: volume_incremental-dr17.png  used on input line 491.
+(pdftex.def)             Requested size: 256.55872pt x 200.22725pt.
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 492--492
+[][][][]| 
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 492--492
+[][][][]| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 14 undefined on input line 498.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 14 undefined on input line 498.
+
+[14 <./Meerkat_Spec_pipeline.png>]
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 500.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 501.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 501.
+
+
+Package natbib Warning: Citation `sdssMaNGAData2019' on page 15 undefined on input line 501.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 502.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 502.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 503.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 504.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 504.
+
+
+Package natbib Warning: Citation `almeidaEighteenthDataRelease2023' on page 15 undefined on input line 504.
+
+[15 <./volume_incremental-dr17.png>]
+<SDSS_Optical_Image.png, id=642, 462.528pt x 346.896pt>
+File: SDSS_Optical_Image.png Graphic file (type png)
+<use SDSS_Optical_Image.png>
+Package pdftex.def Info: SDSS_Optical_Image.png  used on input line 529.
+(pdftex.def)             Requested size: 256.55872pt x 192.42897pt.
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 535--535
+[][]| [] [][][]| 
+ []
+
+
+Package natbib Warning: Citation `verarubinobservatoryLSSTLicensingOverview' on page 16 undefined on input line 541.
+
+
+Package natbib Warning: Citation `verarubi+nobservatoryLSSTLicensingOverview' on page 16 undefined on input line 542.
+
+
+Package natbib Warning: Citation `verarubinobservatoryLSSTLicensingOverview' on page 16 undefined on input line 542.
+
+[16 <./SDSS_Optical_Image.png>]
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 546--546
+[][]| [] [][][]| 
+ []
+
+
+Overfull \hbox (19.23029pt too wide) in paragraph at lines 550--550
+[][]| [] [][][]| 
+ []
+
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+)
+Overfull \vbox (2.181pt too high) has occurred while \output is active []
+
+ [17] [18] (./main.bbl
+Overfull \hbox (229.89204pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/10.95 https://skaafrica.atlassian.net/wiki/spaces/ESDKB/pages/338723406/SDP+pipelines+overview  
+ []
+
+) (./main.bbl [19{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.MIGHTEESurvey}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \bibitem[{MIG(????)}]{MIGHTEESurvey}
+                                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.SKATelescopeSpecifications}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 ...m[{SKA(????)}]{SKATelescopeSpecifications}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.blythLADUMALookingDistant2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 ... Van~Drie}]{blythLADUMALookingDistant2018}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.bowenOpticalDesign40in1973}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ...aughan(1973)}]{bowenOpticalDesign40in1973}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.bundyOVERVIEWSDSSIVMaNGA2014}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 ..., \& Zhang}]{bundyOVERVIEWSDSSIVMaNGA2014}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.bundyOVERVIEWSDSSIVMaNGA2014a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ... \& Zhang}]{bundyOVERVIEWSDSSIVMaNGA2014a}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.camiloDOCUMENTDISTRIBUTION2024}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 ...lo(2024)}]{camiloDOCUMENTDISTRIBUTION2024}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.cottonObitDevelopmentEnvironment2008}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 ...8)}]{cottonObitDevelopmentEnvironment2008}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.cottonAttemptAdaptSaultWieringa2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...10)}]{cottonAttemptAdaptSaultWieringa2010}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.dawsonSDSSIVEXTENDEDBARYON2016}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ..., \& Zou}]{dawsonSDSSIVEXTENDEDBARYON2016}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.deblokMHONGOOSEMeerKATNearby2024}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 ...jlstra}]{deblokMHONGOOSEMeerKATNearby2024}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.dewdneySquareKilometreArray2009}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 ...& Lazio}]{dewdneySquareKilometreArray2009}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.fernandesRealtimeLineDetection2008}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 ...008)}]{fernandesRealtimeLineDetection2008}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.goedhartMeerKATSpecifications2025}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 ...2025)}]{goedhartMeerKATSpecifications2025}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.gunn25TelescopeSloan2006}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 ...edden, \& Wang}]{gunn25TelescopeSloan2006}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.guptaBlindOHAbsorption2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 ...eld, \& Wong}]{guptaBlindOHAbsorption2021}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.heyFourthParadigmDataIntensive2009}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...olle}]{heyFourthParadigmDataIntensive2009}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.holtzmanNMSU1Telescope2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 ... \& Coughlin}]{holtzmanNMSU1Telescope2010}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.ivezicLSSTScienceDrivers2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 ...m, \& Zhan}]{ivezicLSSTScienceDrivers2019}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.jonasMeerKATRadioTelescope2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 ...m}(2018)}]{jonasMeerKATRadioTelescope2018}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.juricLSSTDataManagement2017}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 ... \& Yoachim}]{juricLSSTDataManagement2017}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.lesserSummaryChargeCoupledDevices2015}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 ...)}]{lesserSummaryChargeCoupledDevices2015}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.luptonSDSSImagingPipelines2001}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74 ...& Yasuda}]{luptonSDSSImagingPipelines2001}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.luptonSDSSImagingPipelines2007}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 ...& Yasuda}]{luptonSDSSImagingPipelines2007}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.majewskiApachePointObservatory2017}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 ...mora}]{majewskiApachePointObservatory2017}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.mooreCrammingMoreComponents2006}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 ...e(2006)}]{mooreCrammingMoreComponents2006}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 ...ac.rubinobservatoryPSTN019LSSTScience2025}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.ratcliffeSDPPipelinesOverview2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 ...2021)}]{ratcliffeSDPPipelinesOverview2021}
+                                                  
+Overfull \hbox (229.89204pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/10.95 https://skaafrica.atlassian.net/wiki/spaces/ESDKB/pages/338723406/SDP+pipelines+overview  
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.richardsWhatVignetting2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 ...chards(2020)}]{richardsWhatVignetting2020}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.verbuntThreeEditionsStar2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 ...Gent(2010)}]{verbuntThreeEditionsStar2010}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.woudtThunderKATMeerKATLarge2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 ...~Soelen}]{woudtThunderKATMeerKATLarge2018}
+                                                  ) [20]
+
+Package natbib Warning: There were undefined citations.
+
+
+Package natbib Warning: There were multiply defined citations.
+
+(./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: ABF5FA90888B298CB06C949233087278;5123.
+ ) 
+Here is how much of TeX's memory you used:
+ 15905 strings out of 473579
+ 234556 string characters out of 5732264
+ 2438960 words of memory out of 5000000
+ 38408 multiletter control sequences out of 15000+600000
+ 571316 words of font info for 90 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 90i,11n,93p,3053b,1787s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (20 pages, 6315056 bytes).
+PDF statistics:
+ 931 PDF objects out of 1000 (max. 8388607)
+ 840 compressed objects within 9 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+
