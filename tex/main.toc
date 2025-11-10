@@ -13,7 +13,7 @@
 \contentsline {subsubsection}{\numberline {2.1.2}The Rubin/Large Synoptic Survey Telescope (LSST)}{9}{subsubsection.2.1.2}%
 \contentsline {paragraph}{Data Collection and Storage}{9}{section*.5}%
 \contentsline {paragraph}{Data Processing}{9}{section*.6}%
-\contentsline {paragraph}{Real-Time Processing}{9}{section*.7}%
+\contentsline {paragraph}{Real-Time Processing}{10}{section*.7}%
 \contentsline {subsection}{\numberline {2.2}The Radio Big Data Pipeline}{12}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}The MeerKAT}{12}{subsubsection.2.2.1}%
 \contentsline {paragraph}{Data Processing}{12}{section*.8}%
@@ -21,15 +21,20 @@
 \contentsline {section}{\numberline {3}Results}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Optical Data Results}{14}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}The Sloan Digital Sky Survey (SDSS)}{14}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}The Rubin/Large Synoptic Survey Telescope (LSST)}{16}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}The Radio Data Results}{16}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}The MeerKAT}{16}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}The Square Kilometre Array (SKA)}{16}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Discussion}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Open Source Policies and Transparency}{16}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}The SDSS Policy}{16}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}The LSST Policy}{17}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}The MeerKAT Policy}{17}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}The SKA Policy}{17}{subsubsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.2}The Rise of AI/ML in Surveys}{17}{subsection.4.2}%
-\contentsline {section}{\numberline {A}Python Code for SDSS Data Retrieval (Figure 3)}{17}{appendix.1.A}%
+\contentsline {subsubsection}{\numberline {3.1.2}The Rubin/Large Synoptic Survey Telescope (LSST)}{15}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}The Radio Data Results}{17}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}The MeerKAT}{17}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}The Square Kilometre Array (SKA)}{17}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Discussion}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Open Source Policies and Transparency}{17}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}The SDSS Policy}{17}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}The LSST Policy}{18}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}The MeerKAT Policy}{18}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}The SKA Policy}{18}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}The Importance of Open Source Data in Astronomy}{18}{subsubsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.2}The Increase of Skill Needed}{19}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}The Storage and Sustainability of the Data}{19}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}The Rise of AI/ML in Surveys}{20}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}The Future of Big Data in Astronomy}{20}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusion}{20}{section.5}%
+\contentsline {section}{\numberline {A}Python Code for SDSS Data Retrieval (Figure 3)}{20}{appendix.1.A}%

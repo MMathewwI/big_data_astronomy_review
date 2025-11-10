@@ -1,21 +1,21 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1762149445.97747 0
-  "./references.bib" 1762060411 101234 7add30d578c339ea352aaeca7a676bed ""
+["bibtex main"] 1762754287.58147 "main.aux" "main.bbl" "main" 1762754303.02142 0
+  "./references.bib" 1762752073 113686 57efbeba56aa49e8f77be760ae50637a ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1725840509 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "filename.bib" 0 -1 0 ""
-  "main.aux" 0 -1 0 "pdflatex"
+  "main.aux" 1762754301 35273 1d6e863b38aaade3d7e4a695d94cadc2 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1762149430.66335 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1762149445.97747 0
+["pdflatex"] 1762754288.56363 "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" "main.pdf" "main" 1762754303.02292 0
   "AAS2TRO.png" 1762140731 42011 94e913234a46132df9b61d09b614c4ba ""
+  "LSP_Jupyter.png" 1762734297 360922 b33d8003001f5a4c2d09a6ce5a4f88df ""
   "MeerKAT_Image.png" 1760775492 5335819 30b0c1a6a6a8f3aa8c35cbb8ca9f0a37 ""
   "Meerkat_Spec_pipeline.png" 1760777455 55528 c8c0fc2e35ebc45ed78b59070bdc64bf ""
   "SDSS_Optical_Image.png" 1760317796 270094 82e09b809c1585ede94f651b6de058d6 ""
   "SKA_Graph.png" 1760201177 155801 20f213a6c21cda33d13658fe67087eb8 ""
   "aastex631.cls" 1758742918 239479 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1762149414 52918 4e9118fa5c90b565c4b1b58c5a53f6de ""
+  "c:/Users/Mathew Icho/OneDrive/D.S. Coding Projects/big_data_astronomy_review/tex/main.tex" 1762754271 61814 d6b5ef22d9edb4ac0f6432b797e094b0 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1725841972 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725843524 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1725844058 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -151,11 +151,11 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725849800 8239325 50797afa5a41a53037c3ab6978671a7e ""
   "c:/texlive/2024/texmf.cnf" 1725849597 713 e69b156964470283e0530f5060668171 ""
   "gunn_table_5.png" 1759645037 162226 1175916ccbb900e8e6584d84db691d6b ""
-  "main.aux" 1762149444 37279 7965bf42ac9919fe81b18ade64b3f1a9 "pdflatex"
-  "main.bbl" 1760832563 15721 bc17c8994e9f87ed498171532cde98bd "bibtex main"
-  "main.out" 1762149444 5123 abf5fa90888b298cb06c949233087278 "pdflatex"
-  "main.tex" 1762149414 52918 4e9118fa5c90b565c4b1b58c5a53f6de ""
-  "main.toc" 1762149444 2947 ede56fe7f428a5afd0a66d67e8f908cf "pdflatex"
+  "main.aux" 1762754301 35273 1d6e863b38aaade3d7e4a695d94cadc2 "pdflatex"
+  "main.bbl" 1762754288 24514 784a8ded6b35859b34092a12f8708f26 "bibtex main"
+  "main.out" 1762754301 6288 39ad2aa115a12d6900c69b0a4ebb6922 "pdflatex"
+  "main.tex" 1762754271 61814 d6b5ef22d9edb4ac0f6432b797e094b0 ""
+  "main.toc" 1762754301 3445 21c8e0140f9a1a5d1b32923b7934a0da "pdflatex"
   "volume_incremental-dr17.png" 1762062402 546137 2aed10d48edaf018e25693e031a48cce ""
   (generated)
   "main.aux"

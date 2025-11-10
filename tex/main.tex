@@ -14,11 +14,7 @@
 \begin{abstract}
 I'm making my abstract my to do list for now
 
-\textbf{2. Find a paper or part of it that describes how SDSS stores the data. I don't think I've dont that sufficiently}
-
-\textbf{3. Do the LSST part}
-
-\textbf{4. Do the Results section, look at data collected. I plan on coding A LOT for this section}
+\textbf{1. Do the main part of the discussion. Talk about the exponential increase of data }
 
 \end{abstract}
 
@@ -281,54 +277,52 @@ This task is combined with the deblending of collected images allows for the LSS
 
 %After that task is done, the data is deblended \cite{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025}. 
 
-\textbf{New text starts here}
 \paragraph{Real-Time Processing}
-\textbf{Should I leave this here or put it in discussions?}
-Due to the sheer volume of data processed by the LSST, processing data in real time is important. Multiple programs have been made to circumvent this issue, one I will highlight is AAS2TRO.
-The goal of the AAS2RTO program is to use the Danish-1.54 m telescope to quality control LSST data \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Due to the sheer volume of data produced by the LSST, processing data in real time is important.
+It is vital to generate alerts for transient sources in a timely manner for prompt follow-up observations. The Automated Alert Streams to Real-Time Observations (AAS2RTO) is a software system to filter and prioritize alerts \citep{sedgewickAAS2RTOAutomatedAlert2025}
+This may include spectroscopic follow up on the Danish 1.54 m telescope \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.4\textwidth]{AAS2TRO.png}
-  \caption{Figure 2 from Sedgewick et al. (2025), A graph showing the AAS2RTO process}
+  \caption{A graph showing the AAS2RTO process to filter and prioritize transient candidates (Figure 2 from Sedgewick et al. 2025)}
   \label{fig:AAS2RTO}
 \end{figure}
 
-The first step of AAS2TRO is compiling an unordered set of candidates based on user-given paremeters, and computing an interest value for each candidate \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-The AAS2RTO recieves data about new observations from alert brokers such as FINK \footnote{\url{https://fink-broker.org/about/}} and Lasair \footnote{\url{https://lasair-ztf.lsst.ac.uk/}} \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The first step of AAS2TRO is compiling an unordered set of candidates based on user paremeters, and computing an interest value for each candidate \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+AAS2RTO recieves data about new observations from alert brokers such as FINK \footnote{\url{https://fink-broker.org/about/}} and Lasair \footnote{\url{https://lasair-ztf.lsst.ac.uk/}} \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-The LSST sends raw data to these alert brokers in packets. These packets consist of information about a detected astrophysical event which underwent a change of brightness or position \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The LSST sends raw data to alert brokers in packets. These packets consist of information about any astrophysical object that underwent a change of brightness or position \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 The brokers then filter the data for false positive alerts and send the filtered data to AAS2RTO \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-The next step of AAS2RTO is to prefilter the data \citep{sedgewickAAS2RTOAutomatedAlert2025}. This is done using a rough scoring function in order to prefilter bad data effectively before using more costly models \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-Then, AAS2RTO uses fit models in order to further identify good observations. After that, AAS2RTO computes the scores of observations in order to rank observations in descending order and removes negative observations \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The next step of AAS2RTO is to prefilter the data \citep{sedgewickAAS2RTOAutomatedAlert2025}. This is done using a rough scoring function to prefilter bad data effectively before using more costly models \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Then, AAS2RTO fit models in order to further identify good candidates. After that, AAS2RTO computes the scores of candidates to rank observations in descending order and removes rejected candidates \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-An application of AAS2TRO, as described in \citep{sedgewickAAS2RTOAutomatedAlert2025}, is the use of classifying type Ia supernovae (SNe Ia).
-The prefilter step uses a specialized model. The model works by combining four functions, which I will describe, into one and determining whether the score is positive (good data), or negative (bad data) \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-The following equations have been generated with ChatGPT and have been checked for errors compared to the original equations in \cite{sedgewickAAS2RTOAutomatedAlert2025}.
-The first equation is the magnitude of the observation:
+An application of AAS2TRO, as described in \citep{sedgewickAAS2RTOAutomatedAlert2025}, is to classify type Ia supernovae (SNe Ia).
+The prefilter step uses a specialized model. Combining four functions, described below, and determining whether the score is positive (good data), or negative (bad data) \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The first equation is a magnitude factor $x_{\mathrm{mag}}$: \citep{sedgewickAAS2RTOAutomatedAlert2025}
 
 \begin{equation}
 x_{\mathrm{mag}} = 10^{0.5 \times (18.5 - m)}
 \end{equation}
 
-Where where $m$ is the magnitude as detected in the data. This equation promotes brighter supernovae over fainter ones. Supernovae fainter than 18.5 magnitude are then removed from the scoring list, but not completely deleted, as they may become brighter overtime \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Where $m$ is the transient magnitude. This equation promotes brighter supernovae over fainter ones. Supernovae fainter than 18.5 magnitude are then removed from the scoring list, but not completely deleted, as they may become brighter \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-The next equation is the peak brightness:
+The next function is the peak brightness: \citep{sedgewickAAS2RTOAutomatedAlert2025}
 
 \begin{equation}
 x_{\mathrm{peak}} = A \times \exp\!\left[-\frac{(t_{\mathrm{obs}} - t_0)^2}{2\sigma^2}\right]
 \end{equation}
 
-Described by a gaussian distribution, this equation serves to emphasis objects that are near their predicted peak using light-curve fit model such as the Spectral Adaptive Lightcurve Template (SALT) model \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-$t_{\mathrm{obs}}$ describes the observation time of the supernovae \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-$A$ is the amplitude parameter, set to $A = 30$. $\sigma$ determines how far away the observation time can be from the predicted peak time, this is usually set as $\sigma = 1 day$ \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-The equation quantifies the importance of how close to its predicted peak the supernovae is by assigning $x_{\mathrm{peak}}$ to its expected value, but also other values for different cases \citep{sedgewickAAS2RTOAutomatedAlert2025}. 
-If $|t_{\mathrm{obs}} - t_0| > 4$, then $x_{\mathrm{peak}}$ is set to $10^{-2}$ \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+This Gaussian function serves to emphasize objects that are near their predicted peak using light-curve models such as the Spectral Adaptive Lightcurve Template (SALT) model \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The term $t_{\mathrm{obs}}$ is the observation time of the supernovae \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+$A$ is the amplitude parameter (set to $A = 30$), and $\sigma$ is the peak width and is usually set as $\sigma =$ 1 day \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+This function prioritizes supernovae close to their peak \citep{sedgewickAAS2RTOAutomatedAlert2025}. 
+If $|t_{\mathrm{obs}} - t_0| > 4$, then $x_{\mathrm{peak}}$ is $10^{-2}$ \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 Lastly, if the SALT model fails, $x_{\mathrm{peak}}$ is set to 1.0 \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-The third function goes as follows:
+The third function is as follows:
 \begin{equation}
 x^{k}_{\mathrm{rise}} = 
 \frac{
@@ -339,11 +333,11 @@ N_k - 1
 }
 \end{equation}
 
-Where k is the photometric band. $m^k_{i}$ is the magnitude of the ith detection in the k band. $N^{k}$ is the number of detections in the k band \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-The numerator of the equation is a boolean expression. If the statement is true, it equals 1, and 0 otherwise \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-This equation is used to quantify if the supernovae is becoming brighter or dimmer based on its current and earlier observations \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Where k is the photometric band index. $m^k_{i}$ is the magnitude of the ith detection in the kth band, $N_{k}$ is the number of detections in the k band \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+The numerator of the equation is a boolean expression.
+This equation is used to quantify if the supernovae is becoming brighter or dimmer using current and earlier observations \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
-The last equation is described as:
+The last equation is:
 \begin{equation}
 x_{\mathrm{span}} =
 \begin{cases}
@@ -352,22 +346,22 @@ L(T; r, x_m), & \text{otherwise}
 \end{cases}
 \end{equation}
 
-Where L is defined as:
+where L is defined as:
 \begin{equation}
 L(x; r, x_m) = \frac{1}{1 + \exp(-r(x - x_m))}
 \end{equation}
 
-$x_m$ is the day in which the brightness peaks. Similar to $x_{peak}$, $x_{span}$ describes how far along a supernovae is only with respect to the first time it is observed, and serves to quantify the goodness of the supernovae observation when the SALT model fails \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-Observations with time greater than 30 days are discarded \citep{sedgewickAAS2RTOAutomatedAlert2025}
+Here, $x_m$ is the day on which the brightness peaks. The function $x_{span}$ quantifies time since the first observation \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Functions $x_{span}$ and $x_{peak}$ are useful proxies when the SALT model fit fails \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Observations older than 30 days are discarded \citep{sedgewickAAS2RTOAutomatedAlert2025}
 
-These four functions combine into one function, the SNe Ia score:
+These four functions combine into the SNe Ia score: \citep{sedgewickAAS2RTOAutomatedAlert2025}
 
 \begin{equation}
 S_{\mathrm{Ia}} = S_{\mathrm{base}} \, x_{\mathrm{mag}} \, x_{\mathrm{peak}} \, x_{\mathrm{rise}} \, x_{\mathrm{span}}
 \end{equation}
 
-Where $S_{base} = 1$ \citep{sedgewickAAS2RTOAutomatedAlert2025}. Next, the final score function is calculated from $S_{\mathrm{Ia}}$ and the visibility function \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-The first function is the visiblity function described as follows:
+where $S_{base} = 1$ \citep{sedgewickAAS2RTOAutomatedAlert2025}. Next, the final score function is calculated from $S_{\mathrm{Ia}}$ and the object visibility function $x_{vis}$: \citep{sedgewickAAS2RTOAutomatedAlert2025}.
 
 \begin{equation}
 x_{\mathrm{vis}} =
@@ -379,7 +373,7 @@ A_{\mathrm{vis}}
 \right)^{-1}
 \end{equation}
 
-$A_{vis}$ is equal to:
+where $A_{vis}$ is:
 
 \begin{equation}
 A_{\mathrm{vis}} = 
@@ -387,18 +381,19 @@ A_{\mathrm{vis}} =
 \!\!\left[ a(t) - a_{\mathrm{min}} \right] dt
 \end{equation}
 
-$a_{ref} = 90^\circ$ is the reference altitude used for normalization. $a(t)$ is the altitude at a given time. $a_{min}$ is the minimum altitude that the observation can be detected at. $t_{SR}$ is the expected time of sunrise. $t_{obs}$ is the time of the observation \citep{sedgewickAAS2RTOAutomatedAlert2025}.
-
-Finally, the final score, $S_{DK154}$, is calculated using the following equation:
+Here $a_{ref} = 90^\circ$ is the reference altitude used for normalization, $a(t)$ is the altitude at a given time, $a_{min}$ is the minimum observable altitude,
+$t_{SR}$ is the expected time of the next sunrise, $t_{obs}$ is the time of the observation \citep{sedgewickAAS2RTOAutomatedAlert2025}.
+Functions $x_{vis}$ weights objects by the intensity of the observation.
+The final score, $S_{DK154}$, is calculated as:
 
 \begin{equation}
 S_{DK154} = S_{\mathrm{Ia}} \, x_{vis}
 \end{equation}
 
-After all that, the AAS2RTO ranks the observations based on descending order and removes negative scores.
+AAS2RTO then ranks the observations in descending priority and removes negative scores for rejected candidates.
 
-The AAS2RTO is only one of many programs used to deal with real-time processing for the LSST.
-The rise of prevalence with these programs demonstrate the challenges of big data in astronomy, which will be discussed further in the discussion section.
+AAS2RTO is only one of many programs used to deal with real-time processing for the LSST.
+Such programs demonstrate the challenges of big data in astronomy.
 
 %The LSST uses a package called \texttt{ap$_$pipe} for real-time processing \citep{nsf-doeverac.rubinobservatoryPSTN019LSSTScience2025,ktProposalPrototypePrompt2023}.
 %This package 
@@ -473,46 +468,82 @@ At this point, conservative baseline-depedent averaging is also applied to the v
 
 \subsubsection{The Square Kilometre Array (SKA)}
 
-\textbf{New text starts here, I dont know why my figure has 2 footnotes, I have compiled multiple times and I have only put one footnote:}
 \section{Results}
 
 \subsection{The Optical Data Results}
 
 \subsubsection{The Sloan Digital Sky Survey (SDSS)}
-Since 1998, the SDSS has published nineteen data releases and five generations, each with their own goals. Most recently, SDSS-IV planned to use spectroscopic surveys to detect cosmological objects \citep{ahumada16thDataRelease2020}.
-The sixteenth data release is the first one that utilizies the SDSS-IV \citep{ahumada16thDataRelease2020}. While the seventeenth data release is the last one that utilizies the SDSS-IV. 
+Since 1998, the SDSS has published nineteen data releases over five project generations, each with their own goals. Most recently, SDSS-IV used spectroscopic surveys to detect cosmological objects \citep{ahumada16thDataRelease2020}.
+The sixteenth data release (DR16) is the first one for SDSS-IV \citep{ahumada16thDataRelease2020}. While the seventeenth data release (DR17) will be the lass for SDSS-IV. 
 I plan to compare these two data releases.
-The reason I'm not comparing the eighteenth data release is because it was mainly used to set the foundation for future SDSS-V data releases by introducing new models, functions, strategies, and more \citep{almeidaEighteenthDataRelease2023}.
-The nineteenth release is also not applicable to this comparison because it is only a preview of what is achievable by the SDSS-V \citep{collaborationNineteenthDataRelease2025}
-I believe it is important to compare these two data releases because they quantify the increase of data acquisition within the same generation.
+DR18 is ommited because it was mainly used to set the foundation for future SDSS-V data releases by introducing new models, functions, strategies, and more \citep{almeidaEighteenthDataRelease2023}.
+The nineteenth release (DR19) is also excluded because it is only a preview of what is achievable by the SDSS-V \citep{collaborationNineteenthDataRelease2025}
+The two data releases compared quantify the increase in data volume within the same generation.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{volume_incremental-dr17.png}
-  \caption{A graph from the SDSS-IV \footnote{\url{https://www.sdss4.org/dr17/data_access/volume/}} website, showing the increase of data volume throughout multiple data releases}
+  \caption{The increase of data volume over multiple SDSS data releases (Figure from the SDSS website\footnote{\url{https://www.sdss4.org/dr17/data_access/volume/}})}
   \label{fig:volume_incremental-dr17}
 \end{figure}
 
-According to Figure 6, it is clear that every data release has grown in terms of volume data. The first few generations increased only slightly, and the later generations increased exponentially. This is a clear example of Moore's Law. 
-The sixteenth data release accounts for approximately 18.1\% of the SDSS-IV's total data, and the seventeeth data release accounts for approximately 37.7\% of the SDSS-IV's total data.
+Every successive data release has grown in terms of volume of data (Fig 6). The first few generations increased only slightly, and the later generations increased exponentially. This is a clear example of Moore's Law. 
+DR16 accounts for approximately 18.1\% of the total SDSS-IV data, and DR17 accounts for approximately 37.7\% of the SDSS-IV's total data.
 The seventeenth data release consists of over 46 million new files, which is the reason for the massive increase in data volume \citep{almeidaEighteenthDataRelease2023}. This increase in data can be summarized in four reasons \citep{almeidaEighteenthDataRelease2023}. 
+The first reason is because DR17 includes the entirety of the APOGEE-2 survey, which combined an additional 879,437 infrared spectral measurements \citep{almeidaEighteenthDataRelease2023}.
+The second reason is because the MaNGA survey also completed at this time \citep{almeidaEighteenthDataRelease2023}. The MaNGA survey release included 11273 cubes compared to DR16's 4824 cubes \citep{almeidaEighteenthDataRelease2023}. These cubes hold 3D data, which two spacial dimensions and one wavelength dimension \citep{sdssMaNGAData2019}.
+The third reason is because of the eBOSS survey \citep{almeidaEighteenthDataRelease2023}. Also, DR17 contains 25 value-added catalogues (VAC) that were either updates, or new \citep{almeidaEighteenthDataRelease2023}.
+These VACs account for a substantial portion of the total data in DR17 \citep{almeidaEighteenthDataRelease2023}.
+The final reason is that DR17 includes all the previous SDSS data releases \citep{almeidaEighteenthDataRelease2023}. The data were reprocessed with the newest pipelines at that time \citep{almeidaEighteenthDataRelease2023}. The updated pipelines generated more data \citep{almeidaEighteenthDataRelease2023}
 
-The first reason is because the seventeenth data release accounts for the entirety of the APOGEE-2 survey, which had an additional 879,437 infrared spectral measurements \citep{almeidaEighteenthDataRelease2023}.
-The second reason is because the MaNGA survey also completed \citep{almeidaEighteenthDataRelease2023}. The MaNGA survey released had 11273 cubes compared to the sixteenth data release's 4824 cubes \citep{almeidaEighteenthDataRelease2023}. These cubes hold 3D data, which two spacial dimensions and one wavelength dimension \citep{sdssMaNGAData2019}.
-The third reason is because of the eBOSS survey \citep{almeidaEighteenthDataRelease2023}. Although the number of data is the same between the sixteenth and seventeenth data release, the seventeenth data release contains 25 value-added catalogues (VAC) that were either updates, or added \citep{almeidaEighteenthDataRelease2023}.
-These VACs contain numerous amounts of processed data that astronomers then use, so each VAC accounts for a substantial portion of the seventeenth data release's total data \citep{almeidaEighteenthDataRelease2023}.
-The last reason is the seventeenth data release includes all the previous SDSS data releases' data \citep{almeidaEighteenthDataRelease2023}. The data has been reprocessed with, what was at the time, the newest pipelines dedicated towards data processing \citep{almeidaEighteenthDataRelease2023}. The updated pipelines accounts for a substantial amount of new data, as more data can be derived from more effective processes \citep{almeidaEighteenthDataRelease2023}
+The comparison of only two consecutive releases has shown a massive increase in data volume. This trend is likely to explode with SDSS-V, which we will discuss later.
 
-The comparison of only two consecutive generations has shown a massive increase in data volume. This trend is likely to explode with the release of SDSS-V and its new components, which we will discuss later in the discussion section.
-
+\textbf{New text starts here:}
 \subsubsection{The Rubin/Large Synoptic Survey Telescope (LSST)}
+LSST has yet to release data, but it is expected to observe an 18,000 deg$^2$ approximately 800 times during a 10 year span \citep{ivezicLSSTScienceDrivers2019}.
+These 800 iterations will result in a total of 32 trillion observations \citep{ivezicLSSTScienceDrivers2019}.
+LSST is estimated to produce around 20 terabytes of data per night \citep{lsstDataManagement}, resulting in a total of approximately 73 petabytes of raw data over the 10 years.
+This would make the total estimated data volume of the LSST approximately 111.96 times bigger than the total data volume of the SDSS pre-DR18.
+
+Another key feature promised of the LSST is the LSST Science Platform (LSP) \citep{juricLSE319LSSTScience2019}. LSP is a collection of web-based tools and services \citep{juricLSE319LSSTScience2019}. LSP aims to centralize the access and analysis of LSST data for the scientific community \citep{juricLSE319LSSTScience2019}.
+LSP is organized into three sections, refered to as Aspects \citep{juricLSE319LSSTScience2019}. The first aspect is the Portal Aspect \citep{juricLSE319LSSTScience2019}. The portal aspect is a website that allows users to analyze and visualize data from both past archives, such as the Infrared Science Archive, the SDSS archive, etc, and LSST images \citep{juricLSE319LSSTScience2019}.
+The Portal Aspect allows users to download data, make plots, and mask data to find specific data points \citep{juricLSE319LSSTScience2019}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.65\textwidth]{LSP_Jupyter.png}
+  \caption{An image of the Notebook Aspect's UI (Figure 4 from \cite{juricLSE319LSSTScience2019})}
+  \label{fig:LSP_Jupyter.png}
+\end{figure}
+
+The second aspect of the LSP is the Notebook Aspect \citep{juricLSE319LSSTScience2019}. Compared to the first aspect, the Notebook Aspect allows users to handle more detailed data analysis through the use of Jupyter notebooks \citep{juricLSE319LSSTScience2019}. Computations in said notebooks will be done using resources from the LSST Data Access center, and not user-local resources \citep{juricLSE319LSSTScience2019}.
+This is done because storing and analyising the large data will hinder users without resources \citep{juricLSE319LSSTScience2019}.
+The notebooks will come preinstalled with important libraries, such as AstroPy, the LSST science pipelines, visualization libraries, and more \citep{juricLSE319LSSTScience2019}.
+These notebooks will be stored as user-generated data products in the LSST Data Access Center \citep{juricLSE319LSSTScience2019}.
+
+The final aspect of the LSP is the Web API Aspect \citep{juricLSE319LSSTScience2019}.The Web API aspect allows users to extract data using APIs \citep{juricLSE319LSSTScience2019}. Instead of working with notebooks, users can query the data to use for extraneous astronomical tools \citep{juricLSE319LSSTScience2019}.
+Another notable feature of the LSP is the use of collaboration \citep{juricLSE319LSSTScience2019}. The LSP allows users to share and edit files and catalogues that can be used for all three aspects \citep{juricLSE319LSSTScience2019}. 
+
+\textbf{Note: Will do this later. Seems super complex and I think it honestly might deserve its own attention}
+
+Another result of the LSST's development is the parallel construction of Machine learning and AI tools. An example of such tools is a spatio-temporal engine which uses three AI models to observe supernovae \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}.
+The engine ran simulations of LSST data in which it reached accuracy of around 99\% \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}.
+
+The first model is the single-epoch model \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}. The single-epoch model uses a convolutional neural network (CNN) \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}. 
+The CNN is made up of two consecutive convolutional layers followed by two consecutive max-pooling layers, this repeats for a total of three times \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}. After the data is processed, it is flattened into a 1D vector, where it is processed through two fully connected layers \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}. 
+The latter layer converts all the pixels into a probability score from [0,1] \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}
+
+The second model is the multi-epoch model \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}.
+
+The final model is the spatio-temporal mofel \citep{kodiramanahAIdrivenSpatiotemporalEngine2022}.
 
 \subsection{The Radio Data Results}
 
 \subsubsection{The MeerKAT}
 
+\textbf{Note: Will work on this next. It's hard to find numbers for the MeerKat and SKA}
 \subsubsection{The Square Kilometre Array (SKA)}
-
+The SKA will collect over 700 petabytes of data per year \citep{skaoHandlingDelugeBig2025}.
 
 \textbf{New text ends here:}
 
@@ -539,7 +570,7 @@ Overall, the SDSS has demonstrated a strong commitment to making their data and 
 \subsubsection{The LSST Policy}
 Despite providing fully public data, the LSST has committed to open source software and a transparent pipeline. 
 The LSST has declared that any source code made for data management must have an Open Source Initiative license \citep{verarubinobservatoryLSSTLicensingOverview}. 
-Open source data-management software must be issued under the GNU Public license \citep{verarubi+nobservatoryLSSTLicensingOverview}. Otherwise, users are free to choose any Open Source initative approved license \citep{verarubinobservatoryLSSTLicensingOverview}. 
+Open source data-management software must be issued under the GNU Public license \citep{verarubinobservatoryLSSTLicensingOverview}. Otherwise, users are free to choose any Open Source initative approved license \citep{verarubinobservatoryLSSTLicensingOverview}. 
 
 \subsubsection{The MeerKAT Policy}
 The South African Radio Astronomy Observatory (SARAO) has expressed that MeerKAT data products must be open source with adequate acknowledgement through two steps \citep{camiloDOCUMENTDISTRIBUTION2024}. 
@@ -551,10 +582,66 @@ The SARAO has developed a help desk \footnote{\url{https://commons.datacite.org/
 from which users can ask general questions \citep{camiloDOCUMENTDISTRIBUTION2024}. If users have questions on policies of the MeerKAT, they are advised to communicate them to the SARAO chief scientist \citep{camiloDOCUMENTDISTRIBUTION2024}.
 There is also a SARAO Users Committee, reporting to the SARAO MD \citep{camiloDOCUMENTDISTRIBUTION2024}.
 
-\subsubsection{The SKA Policy}
+\textbf{New text starts here:}
 
+\subsubsection{The SKA Policy}
+The SKA has explained that all data collected is owned by the SKAO \citep{ballClassificationUNRESTRICTEDDocument2023}. The data will be made open source after a time period as made by the SKAO council \citep{ballClassificationUNRESTRICTEDDocument2023}
+
+\subsubsection{The Importance of Open Source Data in Astronomy}
+
+The field of Astronomy is inherently data-driven, so open source data policies have become central to Astronomy. 
+The SDSS, LSST, and MeerKat have all taken a stance to make data open source as soon as it is obtained. The SKA is the only project  
+that restricts the use of publizing data for a given time period.
+I believe having open source data and software is crucial for many reasons.
+
+One reason is because it allows for data to be accessible for those without necessary resources.
+Students and scientists who do not have the necessary resources may rely on the public data in order to support a claim.
+In essense, restricting data in any sense is immoral because everyone has a right to knowledge.
+
+Another reason open source data is important is because it allows for the advancement of science. 
+With the data being public, more people will analyze the data and new discoveries may be found.
+Public data will also in turn bring more attention to the survey, so users may build new, more advanced, software for the survey.
+
+A third reason that open source data is important is because it confirms the reliability of claims. 
+If a scientist makes a claim based on results made from data, others must reproduce the same result to confirm the claim.
+So if the data wasn't public, only scientists within the same team would be able to reproduce the same results. 
+These scientists would more than likely support the claim, which creates a conflict of interest and hinders the public from the truth.
+
+Similar to the previous reason, having a transparent pipeline is also important. This is because it builds public trust for the survey. 
+If users are allowed to see every step of the data processing, they are able to understand how the data was transformed, rather than blindly being handed it. 
+It also allows for users to point out hidden biases within the pipeline that may skew the data.
+
+\subsection{The Increase of Skill Needed}
+As explained by Moore's Law, the exponential increase of data collected has led to an exponential increase in complexity of handling the data.
+In the past, astronomy has emphasized collecting data through observations. On the other hand, modern astronomy relies on high-power computing, software engineering, and data analysis.
+Recent surveys such LSST and SKA produce volumes of data that would be impossible to process in a lifetime. The data is processed automatically through multiple pipelines written in Python and C++ code that only increase in complexity over time. 
+As a result of this, more skill is needed from scientists. This may be crucial especially for new scientists. They did not learn as the surveys became more complex, so they have to work from the ground up when compared to experienced scientists.
+
+Despite the growing complexity, the evolution of skills required may also create opportunities not traditional to astronomy. What was once a field mainly for astronomers, now concerns astronomers, engineers, computer scientists, statisticians, etc.
+This This increase of collaboration may encourage innovation as these scientists have different skillsets and mindsets. While the increase of skill needed has made observational astronomy more difficult, it has allowed for more collaboration and innovation.
+
+\subsection{The Storage and Sustainability of the Data}
+In the past, the storage of data collected was an afterthought. The main focus of collecting data was drawing claims from them. Due to the expansion of data into the petabyte scales, the handling of the data has become more challenging.
+Challenges arise, such where to store the data. Data must be stored in data centers with high capacity. These data centers must also have enough bandwidth to allow users to retrieve data remotely. 
+As a result of this, more money must be allocated to store the data, which may take away from funds that could be used to further develop instruments.
+
+Another concern is the sustainability of the data. This is currently not a glaring issue, but as data volume increases, so too does the energy needed to store it in the data centers and process the data.
+Especially due to the rise of AI in astronomy, the energy needed may become significant enough to negatively impact the enviroment.
 \subsection{The Rise of AI/ML in Surveys}
 
+\subsection{The Future of Big Data in Astronomy}
+\textbf{Not done yet with this}
+
+From being completely handled by humans, to having minimal human interaction, the processing of data in astronomy has evolved overtime.
+In recent times, it has evolved at a more rapid pace. In the present, astronomy has entered an age of unrivaled data volume and complexity.
+Through the use of observing the four main surveys we have observed, it is clear that this behavior will only continue in the future.
+
+The evolution of data has also caused a shift in priorities, which cause problems to arise. As seen through software utilitizing new technology such as machine learning and AI,
+I believe that the collecting of data will not be an issue in the future. By looking at the open source policies of all surveys, I believe that open data and transparency will also not be an issue in the future.
+I think the real issue is the sustainability of the data and the need for more skill.
+
+\textbf{New text ends here:}
+\section{Conclusion}
 
 \lstset{
     basicstyle=\ttfamily\small,
@@ -644,9 +731,8 @@ plt.show()
 
 \end{appendices}
 
-
 \bibliography{references}
-\bibliography{filename}
+%\bibliography{filename}
 
 \end{document}
 

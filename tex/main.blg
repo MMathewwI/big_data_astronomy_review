@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: aasjournal.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "yorkSloanDigitalSky2000"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in MIGHTEESurvey
+Warning--to sort, need author or key in SKATelescopeSpecifications
+Warning--empty year in MIGHTEESurvey; set to ????
+Warning--empty year in SKATelescopeSpecifications; set to ????
+Warning--empty journal in ballClassificationUNRESTRICTEDDocument2023
+Warning--empty journal in camiloDOCUMENTDISTRIBUTION2024
+Warning--empty journal in cottonAttemptAdaptSaultWieringa2010
+Warning--empty journal in juricLSSTDataManagement2017
+Warning--empty year in lsstDataManagement; set to ????
+Warning--empty journal in luptonSDSSImagingPipelines2007
+Warning--empty year in verarubinobservatoryLSSTLicensingOverview; set to ????
+You've used 43 entries,
+            3168 wiz_defined-function locations,
+            938 strings with 48136 characters,
+and the built_in function-call counts, 37862 in all, are:
+= -- 1403
+> -- 5991
+< -- 19
++ -- 1993
+- -- 2017
+* -- 4668
+:= -- 7981
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 203
+chr.to.int$ -- 42
+cite$ -- 58
+duplicate$ -- 693
+empty$ -- 1146
+format.name$ -- 2068
+if$ -- 6633
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 26
+newline$ -- 137
+num.names$ -- 164
+pop$ -- 252
+preamble$ -- 1
+purify$ -- 203
+quote$ -- 0
+skip$ -- 555
+stack$ -- 0
+substring$ -- 520
+swap$ -- 20
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 387
+warning$ -- 11
+while$ -- 132
+width$ -- 0
+write$ -- 451
+(There were 12 warnings)
